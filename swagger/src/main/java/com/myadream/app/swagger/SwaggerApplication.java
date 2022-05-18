@@ -1,12 +1,11 @@
-package com.myadream.app.authorize.controller;
+package com.myadream.app.swagger;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.wqlm.boot.user.dao")
-public class AuthorizeApplication {
+public class SwaggerApplication {
     public static void main(String[] args) {
-        SpringApplication.run(AuthorizeApplication.class, args);
+        SpringApplication.run(SwaggerApplication.class, args);
     }
 }
