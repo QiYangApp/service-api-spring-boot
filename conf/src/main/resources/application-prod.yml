@@ -1,6 +1,6 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
+#    driver-class-name: com.mysql.cj.jdbc.Driver
     name: defaultDataSource
     url: jdbc:mysql://localhost:3306/app?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
@@ -8,6 +8,6 @@ spring:
   liquibase:
     enabled: false
   devtools:
-    add-properties: true
+    add-properties: false
 server:
-  port: 8003
+  port: 8002

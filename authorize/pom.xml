@@ -27,6 +27,10 @@
             <groupId>tk.mybatis</groupId>
             <artifactId>mapper</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.myadream.app</groupId>
+            <artifactId>conf</artifactId>
+        </dependency>
     </dependencies>
 
     <properties>

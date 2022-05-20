@@ -10,6 +10,7 @@
         <module>common</module>
         <module>authorize</module>
         <module>swagger</module>
+        <module>conf</module>
     </modules>
     <name>service-api-spring-boot</name>
     <description>service-api-spring-boot</description>
@@ -26,6 +27,11 @@
         <springdoc-openapi-ui.version>1.6.8</springdoc-openapi-ui.version>
         <springfox-boot-starter.version>3.0.0</springfox-boot-starter.version>
         <arthas-spring-boot-starter.version>3.4.8</arthas-spring-boot-starter.version>
+
+        <com.myadream.app.conf.version>0.0.1-SNAPSHOT</com.myadream.app.conf.version>
+        <com.myadream.app.common.version>0.0.1-SNAPSHOT</com.myadream.app.common.version>
+        <com.myadream.app.swagger.version>0.0.1-SNAPSHOT</com.myadream.app.swagger.version>
+        <com.myadream.app.authorize.version>0.0.1-SNAPSHOT</com.myadream.app.authorize.version>
     </properties>
 
     <repositories>
@@ -40,45 +46,6 @@
             </snapshots>
         </repository>
     </repositories>
-    <profiles>
-        <profile>
-            <id>local</id>
-            <properties>
-                <profilesActive>local</profilesActive>
-            </properties>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-        </profile>
-        <profile>
-            <id>dev</id>
-            <properties>
-                <profilesActive>dev</profilesActive>
-            </properties>
-            <activation>
-                <activeByDefault>false</activeByDefault>
-            </activation>
-        </profile>
-        <profile>
-            <id>test</id>
-            <properties>
-                <profilesActive>test</profilesActive>
-            </properties>
-            <activation>
-                <activeByDefault>false</activeByDefault>
-            </activation>
-        </profile>
-        <profile>
-            <id>prod</id>
-            <properties>
-                <profilesActive>prod</profilesActive>
-            </properties>
-            <activation>
-                <activeByDefault>false</activeByDefault>
-            </activation>
-        </profile>
-
-    </profiles>
 
     <dependencies>
         <dependency>
@@ -90,25 +57,11 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>aliyun-oss-spring-boot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>aliyun-sms-spring-boot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.liquibase</groupId>
-            <artifactId>liquibase-core</artifactId>
-        </dependency>
-
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
-
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -119,6 +72,12 @@
             <artifactId>mariadb-java-client</artifactId>
             <scope>runtime</scope>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.myadream.app</groupId>-->
+<!--            <artifactId>conf</artifactId>-->
+<!--        </dependency>-->
+
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
@@ -149,6 +108,40 @@
 
     <dependencyManagement>
         <dependencies>
+<!--            modules-->
+            <dependency>
+                <groupId>com.myadream.app</groupId>
+                <artifactId>conf</artifactId>
+                <version>${com.myadream.app.conf.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.myadream.app</groupId>
+                <artifactId>common</artifactId>
+                <version>${com.myadream.app.common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.myadream.app</groupId>
+                <artifactId>authorize</artifactId>
+                <version>${com.myadream.app.authorize.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.myadream.app</groupId>
+                <artifactId>swagger</artifactId>
+                <version>${com.myadream.app.swagger.version}</version>
+            </dependency>
+            <!--            modules-->
+
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>aliyun-oss-spring-boot-starter</artifactId>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>aliyun-sms-spring-boot-starter</artifactId>
+                <scope>import</scope>
+            </dependency>
             <dependency>
                 <groupId>com.taobao.arthas</groupId>
                 <artifactId>arthas-spring-boot-starter</artifactId>
@@ -168,9 +161,7 @@
                 <version>${springfox-boot-starter.version}</version>
             </dependency>
 
-            <!--            swagger api -->
-
-
+            <!-- swagger api -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
@@ -195,6 +186,13 @@
                 <groupId>tk.mybatis</groupId>
                 <artifactId>mapper</artifactId>
                 <version>${tk-mybatis-mapper.version}</version>
+            </dependency>
+
+
+
+            <dependency>
+                <groupId>org.liquibase</groupId>
+                <artifactId>liquibase-core</artifactId>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -18,14 +18,6 @@
     </properties>
 
     <dependencies>
-
-        <dependency>
-            <groupId>com.taobao.arthas</groupId>
-            <artifactId>arthas-spring-boot-starter</artifactId>
-            <version>3.4.8</version>
-            <scope>runtime</scope>
-        </dependency>
-
         <!-- Swagger UI -->
         <dependency>
             <groupId>org.springdoc</groupId>
@@ -38,14 +30,17 @@
         <dependency>
             <groupId>com.myadream.app</groupId>
             <artifactId>common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
 <!--            <scope>compile</scope>-->
         </dependency>
         <dependency>
             <groupId>com.myadream.app</groupId>
             <artifactId>authorize</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
 <!--            <scope>compile</scope>-->
+        </dependency>
+        <dependency>
+            <groupId>com.myadream.app</groupId>
+            <artifactId>conf</artifactId>
+            <!--            <scope>compile</scope>-->
         </dependency>
 <!--        <dependency>-->
 <!--            <groupId>com.myadream.app</groupId>-->
