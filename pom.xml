@@ -8,9 +8,9 @@
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>common</module>
-        <module>authorize</module>
-        <module>swagger</module>
         <module>conf</module>
+        <module>repository</module>
+        <module>api</module>
     </modules>
     <name>service-api-spring-boot</name>
     <description>service-api-spring-boot</description>
@@ -30,8 +30,7 @@
 
         <com.myadream.app.conf.version>0.0.1-SNAPSHOT</com.myadream.app.conf.version>
         <com.myadream.app.common.version>0.0.1-SNAPSHOT</com.myadream.app.common.version>
-        <com.myadream.app.swagger.version>0.0.1-SNAPSHOT</com.myadream.app.swagger.version>
-        <com.myadream.app.authorize.version>0.0.1-SNAPSHOT</com.myadream.app.authorize.version>
+        <com.myadream.app.repository.version>0.0.1-SNAPSHOT</com.myadream.app.repository.version>
     </properties>
 
     <repositories>
@@ -48,34 +47,14 @@
     </repositories>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
+
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.mariadb.jdbc</groupId>
-            <artifactId>mariadb-java-client</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-<!--        <dependency>-->
-<!--            <groupId>com.myadream.app</groupId>-->
-<!--            <artifactId>conf</artifactId>-->
-<!--        </dependency>-->
 
 
         <dependency>
@@ -87,6 +66,10 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -122,14 +105,10 @@
             </dependency>
             <dependency>
                 <groupId>com.myadream.app</groupId>
-                <artifactId>authorize</artifactId>
-                <version>${com.myadream.app.authorize.version}</version>
+                <artifactId>repository</artifactId>
+                <version>${com.myadream.app.repository.version}</version>
             </dependency>
-            <dependency>
-                <groupId>com.myadream.app</groupId>
-                <artifactId>swagger</artifactId>
-                <version>${com.myadream.app.swagger.version}</version>
-            </dependency>
+
             <!--            modules-->
 
             <dependency>
@@ -187,30 +166,13 @@
                 <artifactId>mapper</artifactId>
                 <version>${tk-mybatis-mapper.version}</version>
             </dependency>
-
-
-
-            <dependency>
-                <groupId>org.liquibase</groupId>
-                <artifactId>liquibase-core</artifactId>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 
     <build>
 
         <finalName>${project.artifactId}-${project.version}</finalName>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>application-${profilesActive}.yml</include>
-                    <include>application.yml</include>
-                    <include>**/*.xml</include>
-                </includes>
-                <filtering>true</filtering>
-            </resource>
-        </resources>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -227,7 +189,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.7.RELEASE</version>
                 <configuration>
-                    <mainClass>com.myadream.app.api.ServiceApiSpringBootApplication</mainClass>
+                    <mainClass>com.myadream.app.ServiceApiSpringBootApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
