@@ -1,2 +1,6 @@
 spring:
   profiles: dev
+server:
+  port: 8002
+
+test: dev

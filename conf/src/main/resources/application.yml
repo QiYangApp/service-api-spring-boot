@@ -5,4 +5,8 @@ spring:
     add-properties: false
   profiles:
     active: @profilesActive@
-  port: 8000
+
+server:
+  port: 8001
+
+test: conf
