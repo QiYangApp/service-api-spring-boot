@@ -11,6 +11,9 @@
         <module>conf</module>
         <module>repository</module>
         <module>api</module>
+        <module>service-interface</module>
+        <module>service-impl</module>
+        <module>model</module>
     </modules>
     <name>service-api-spring-boot</name>
     <description>service-api-spring-boot</description>
@@ -28,11 +31,15 @@
         <springdoc-openapi-ui.version>1.6.8</springdoc-openapi-ui.version>
         <springfox-boot-starter.version>3.0.0</springfox-boot-starter.version>
         <arthas-spring-boot-starter.version>3.4.8</arthas-spring-boot-starter.version>
+        <nacos-config-spring-boot-starter.version>0.2.10</nacos-config-spring-boot-starter.version>
 
         <com.myadream.app.conf.version>0.0.1-SNAPSHOT</com.myadream.app.conf.version>
         <com.myadream.app.common.version>0.0.1-SNAPSHOT</com.myadream.app.common.version>
         <com.myadream.app.repository.version>0.0.1-SNAPSHOT</com.myadream.app.repository.version>
         <com.myadream.app.api.version>0.0.1-SNAPSHOT</com.myadream.app.api.version>
+        <com.myadream.app.service-api.version>0.0.1-SNAPSHOT</com.myadream.app.service-api.version>
+        <com.myadream.app.service-impl.version>0.0.1-SNAPSHOT</com.myadream.app.service-impl.version>
+        <com.myadream.app.model.version>0.0.1-SNAPSHOT</com.myadream.app.model.version>
     </properties>
 
     <repositories>
@@ -111,6 +118,21 @@
                 <artifactId>api</artifactId>
                 <version>${com.myadream.app.api.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.myadream.app</groupId>
+                <artifactId>model</artifactId>
+                <version>${com.myadream.app.model.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.myadream.app</groupId>
+                <artifactId>service-api</artifactId>
+                <version>${com.myadream.app.service-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.myadream.app</groupId>
+                <artifactId>service-impl</artifactId>
+                <version>${com.myadream.app.service-impl.version}</version>
+            </dependency>
 
             <!--            modules-->
 
@@ -168,6 +190,13 @@
                 <groupId>tk.mybatis</groupId>
                 <artifactId>mapper</artifactId>
                 <version>${tk-mybatis-mapper.version}</version>
+            </dependency>
+
+           <!--配置服务-->
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>nacos-config-spring-boot-starter</artifactId>
+                <version>${nacos-config-spring-boot-starter.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
