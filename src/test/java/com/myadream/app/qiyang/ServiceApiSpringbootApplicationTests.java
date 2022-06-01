@@ -1,10 +1,10 @@
-package com.myadream.app.api;
+package com.myadream.app.qiyang;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ServiceApiSpringBootApplicationTests {
+class ServiceApiSpringbootApplicationTests {
 
     @Test
     void contextLoads() {

@@ -1,0 +1,10 @@
+spring:
+  config:
+    name: api
+  profiles:
+    include: swagger
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+    

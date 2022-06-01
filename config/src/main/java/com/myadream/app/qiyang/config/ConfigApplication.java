@@ -1,13 +1,11 @@
-package com.myadream.app.api;
+package com.myadream.app.qiyang.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ServiceApiSpringBootApplication {
-
+public class ConfigApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ServiceApiSpringBootApplication.class, args);
+        SpringApplication.run(ConfigApplication.class, args);
     }
-
 }
