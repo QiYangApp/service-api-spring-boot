@@ -6,6 +6,7 @@
     <modules>
         <module>config</module>
         <module>api</module>
+        <module>common</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -26,11 +27,13 @@
 
         <com-myadream-app-qiyang-api.version>0.0.1-SNAPSHOT</com-myadream-app-qiyang-api.version>
         <com-myadream-app-qiyang-conf.version>0.0.1-SNAPSHOT</com-myadream-app-qiyang-conf.version>
+        <com-myadream-app-qiyang-common.version>0.0.1-SNAPSHOT</com-myadream-app-qiyang-common.version>
 
         <mybatis-spring-boot-starter.version>2.1.4</mybatis-spring-boot-starter.version>
         <tk-mybatis-mapper.version>4.1.5</tk-mybatis-mapper.version>
         <com-alibaba-fastjson.version>2.0.3</com-alibaba-fastjson.version>
         <springfox-boot-starter.version>3.0.0</springfox-boot-starter.version>
+        <eu-bitwalker-UserAgentUtils.version>1.21</eu-bitwalker-UserAgentUtils.version>
     </properties>
 
     <dependencyManagement>
@@ -45,6 +48,11 @@
                 <groupId>com.myadream.app.qiyang</groupId>
                 <artifactId>config</artifactId>
                 <version>${com-myadream-app-qiyang-conf.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.myadream.app.qiyang</groupId>
+                <artifactId>common</artifactId>
+                <version>${com-myadream-app-qiyang-common.version}</version>
             </dependency>
 
             <!--           <dependency>-->
@@ -95,6 +103,13 @@
                 <groupId>org.springframework.experimental</groupId>
                 <artifactId>spring-native</artifactId>
                 <version>${spring-native.version}</version>
+            </dependency>
+
+            <!-- 解析 UserAgent 信息 -->
+            <dependency>
+                <groupId>eu.bitwalker</groupId>
+                <artifactId>UserAgentUtils</artifactId>
+                <version>${eu-bitwalker-UserAgentUtils.version}</version>
             </dependency>
 
         </dependencies>
