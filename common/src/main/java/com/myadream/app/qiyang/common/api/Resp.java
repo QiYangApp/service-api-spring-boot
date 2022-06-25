@@ -19,7 +19,7 @@ public class Resp {
     /**
      * 返回状态码
      */
-    private String status;
+    private StatusEnum status;
 
     /**
      * 返回消息

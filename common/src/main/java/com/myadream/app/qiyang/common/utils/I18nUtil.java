@@ -22,7 +22,7 @@ public class I18nUtil {
 
         Locale locale = LocaleContextHolder.getLocale();
         ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
-        messageSource.setBasename("i18n/messages");
+        messageSource.setBasename("messages");
         String content;
         try {
             content = messageSource.getMessage(code, args, locale);

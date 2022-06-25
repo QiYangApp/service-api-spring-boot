@@ -1,5 +1,6 @@
 package com.myadream.app.qiyang.common.api.mode;
 
+import com.myadream.app.qiyang.common.api.StatusEnum;
 import lombok.Data;
 
 @Data
@@ -7,7 +8,7 @@ public class DefaultMode implements RespMode {
     /**
      * 返回状态码
      */
-    private String status;
+    private StatusEnum status;
 
     /**
      * 返回消息

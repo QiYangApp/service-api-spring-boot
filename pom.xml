@@ -35,6 +35,8 @@
         <springfox-boot-starter.version>3.0.0</springfox-boot-starter.version>
         <knife4j-spring-boot-starter.version>3.0.3</knife4j-spring-boot-starter.version>
         <eu-bitwalker-UserAgentUtils.version>1.21</eu-bitwalker-UserAgentUtils.version>
+        <com-alibaba-fastjson.version>2.0.3</com-alibaba-fastjson.version>
+        <spring-boot-starter-log4j2.version>2.7.0</spring-boot-starter-log4j2.version>
     </properties>
 
     <dependencyManagement>
@@ -55,6 +57,12 @@
                 <artifactId>common</artifactId>
                 <version>${com-myadream-app-qiyang-common.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${com-alibaba-fastjson.version}</version>
+            </dependency>
+
 
             <!--           <dependency>-->
             <!--               <groupId>org.springframework.boot</groupId>-->
@@ -144,6 +152,27 @@
             <optional>true</optional>
         </dependency>
 
+        <!-- 引入log4j2依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-yaml</artifactId>
+        </dependency>
+        <!--<editor-fold desc="LOG4J2">-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <!-- exclude掉spring-boot的默认log配置 -->
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
     </dependencies>
 
     <build>
