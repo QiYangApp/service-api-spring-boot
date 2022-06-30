@@ -1,13 +1,12 @@
-
 spring:
   config:
     name: api
-  profiles:
-    include: dev-swagger
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
-
-
+  profiles:
+    include: swagger
 server:
   port: 8088
+  servlet:
+    context-path: /api

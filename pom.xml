@@ -7,6 +7,7 @@
         <module>config</module>
         <module>api</module>
         <module>common</module>
+        <module>services</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -26,8 +27,11 @@
         <spring-native.version>0.12.0-SNAPSHOT</spring-native.version>
 
         <com-myadream-app-qiyang-api.version>0.0.1-SNAPSHOT</com-myadream-app-qiyang-api.version>
+        <com-myadream-app-qiyang-services.version>0.0.1-SNAPSHOT</com-myadream-app-qiyang-services.version>
         <com-myadream-app-qiyang-conf.version>0.0.1-SNAPSHOT</com-myadream-app-qiyang-conf.version>
         <com-myadream-app-qiyang-common.version>0.0.1-SNAPSHOT</com-myadream-app-qiyang-common.version>
+
+        <maven-remote-resources-plugin.version>1.7.0</maven-remote-resources-plugin.version>
 
         <mybatis-spring-boot-starter.version>2.1.4</mybatis-spring-boot-starter.version>
         <tk-mybatis-mapper.version>4.1.5</tk-mybatis-mapper.version>
@@ -37,6 +41,7 @@
         <eu-bitwalker-UserAgentUtils.version>1.21</eu-bitwalker-UserAgentUtils.version>
         <com-alibaba-fastjson.version>2.0.3</com-alibaba-fastjson.version>
         <spring-boot-starter-log4j2.version>2.7.0</spring-boot-starter-log4j2.version>
+        <org-hehibernate-validator.version>6.0.10.Final</org-hehibernate-validator.version>
     </properties>
 
     <dependencyManagement>
@@ -46,7 +51,11 @@
                 <artifactId>api</artifactId>
                 <version>${com-myadream-app-qiyang-api.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>com.myadream.app.qiyang</groupId>
+                <artifactId>services</artifactId>
+                <version>${com-myadream-app-qiyang-services.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.myadream.app.qiyang</groupId>
                 <artifactId>config</artifactId>
@@ -61,6 +70,12 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>${com-alibaba-fastjson.version}</version>
+            </dependency>
+            <!--  validate hibernate -->
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${org-hehibernate-validator.version}</version>
             </dependency>
 
 

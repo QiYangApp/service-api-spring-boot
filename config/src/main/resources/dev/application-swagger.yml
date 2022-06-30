@@ -1,13 +1,12 @@
 springfox:
   documentation:
     swagger-ui:
-      enabled: true
+      enabled: false
 knife4j:
   enable: true
   documents:
-    -
-      group: default
-      name: 歧养
+    - group: default
+      name: 歧羊
       locations: classpath:sign/*
   setting:
     language: zh-CN
@@ -21,20 +20,16 @@ knife4j:
     enableFilterMultipartApis: false
     enableRequestCache: true
     enableHost: false
-#    enableHostText: 192.168.0.193:8000
+    #    enableHostText: 192.168.0.193:8000
     enableHomeCustom: true
-#    homeCustomLocation: classpath:markdown/home.md
+    #    homeCustomLocation: classpath:markdown/home.md
     enableSearch: false
     enableFooter: false
     enableFooterCustom: true
-#    footerCustomContent: Apache License 2.0 | Copyright  2019-[浙江八一菜刀股份有限公司](https://gitee.com/xiaoym/knife4j)
+    #    footerCustomContent: Apache License 2.0 | Copyright  2019-[浙江八一菜刀股份有限公司](https://gitee.com/xiaoym/knife4j)
     enableDynamicParameter: false
     enableDebug: true
     enableOpenApi: false
     enableGroup: true
   cors: true
   production: false
-  basic:
-    enable: true
-    username: test
-    password: 12313

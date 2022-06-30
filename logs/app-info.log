@@ -1,0 +1,1010 @@
+2022.06.30 10:31:47 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 32416 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 10:31:47 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 10:31:47 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 10:31:47 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 10:31:50 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 10:31:50 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 10:31:50 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 10:31:50 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 10:31:50 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 10:31:50 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2958 ms
+2022.06.30 10:31:51 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 10:31:51 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 10:31:51 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path ''
+2022.06.30 10:31:51 CST WARN  org.springframework.context.support.AbstractApplicationContext 591 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
+2022.06.30 10:31:51 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Pausing ProtocolHandler ["http-nio-8765"]
+2022.06.30 10:31:51 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Stopping service [Tomcat]
+2022.06.30 10:31:51 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Stopping ProtocolHandler ["http-nio-8765"]
+2022.06.30 10:31:51 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Destroying ProtocolHandler ["http-nio-8765"]
+2022.06.30 10:31:51 CST INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 136 logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022.06.30 10:35:14 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 32296 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 10:35:14 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 10:35:14 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 10:35:14 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 10:35:17 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 10:35:17 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 10:35:17 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 10:35:17 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 10:35:17 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 10:35:17 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2502 ms
+2022.06.30 10:35:18 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 10:35:18 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 10:35:18 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path ''
+2022.06.30 10:35:18 CST WARN  org.springframework.context.support.AbstractApplicationContext 591 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
+2022.06.30 10:35:18 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Pausing ProtocolHandler ["http-nio-8765"]
+2022.06.30 10:35:18 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Stopping service [Tomcat]
+2022.06.30 10:35:18 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Stopping ProtocolHandler ["http-nio-8765"]
+2022.06.30 10:35:18 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Destroying ProtocolHandler ["http-nio-8765"]
+2022.06.30 10:35:18 CST INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 136 logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022.06.30 10:38:01 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 31164 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 10:38:01 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 10:38:01 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 10:38:01 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 10:38:04 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 10:38:04 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 10:38:04 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 10:38:04 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 10:38:04 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 10:38:04 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2547 ms
+2022.06.30 10:38:05 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 10:38:05 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 10:38:05 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path ''
+2022.06.30 10:38:05 CST WARN  org.springframework.context.support.AbstractApplicationContext 591 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
+2022.06.30 10:38:05 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Pausing ProtocolHandler ["http-nio-8765"]
+2022.06.30 10:38:05 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Stopping service [Tomcat]
+2022.06.30 10:38:05 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Stopping ProtocolHandler ["http-nio-8765"]
+2022.06.30 10:38:05 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Destroying ProtocolHandler ["http-nio-8765"]
+2022.06.30 10:38:05 CST INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 136 logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022.06.30 10:39:15 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 33156 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 10:39:15 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 10:39:16 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 10:39:16 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 10:39:18 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 10:39:18 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 10:39:18 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 10:39:18 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 10:39:18 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 10:39:18 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2695 ms
+2022.06.30 10:39:19 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 10:39:19 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 10:39:19 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path ''
+2022.06.30 10:39:19 CST WARN  org.springframework.context.support.AbstractApplicationContext 591 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.getPatterns()" because "this.condition" is null
+2022.06.30 10:39:19 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Pausing ProtocolHandler ["http-nio-8765"]
+2022.06.30 10:39:19 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Stopping service [Tomcat]
+2022.06.30 10:39:19 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Stopping ProtocolHandler ["http-nio-8765"]
+2022.06.30 10:39:19 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Destroying ProtocolHandler ["http-nio-8765"]
+2022.06.30 10:39:19 CST INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 136 logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022.06.30 11:05:47 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 33848 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 11:05:47 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 11:05:47 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 11:05:47 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 11:05:49 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 11:05:49 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 11:05:49 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 11:05:49 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 11:05:50 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 11:05:50 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2738 ms
+2022.06.30 11:05:50 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 11:05:50 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 11:05:50 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path ''
+2022.06.30 11:05:50 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 5.197 seconds (JVM running for 7.725)
+2022.06.30 11:17:06 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 33848 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 11:17:06 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 2 profiles are active: "i18n", "dev"
+2022.06.30 11:17:08 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 11:17:08 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 11:17:08 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 11:17:08 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 11:17:08 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 11:17:08 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1515 ms
+2022.06.30 11:17:08 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 11:17:08 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 11:17:08 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path ''
+2022.06.30 11:17:08 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 2.187 seconds (JVM running for 685.416)
+2022.06.30 11:17:08 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2022.06.30 11:18:47 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 23876 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 11:18:47 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 2 profiles are active: "i18n", "dev"
+2022.06.30 11:18:48 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 11:18:48 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 11:18:49 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 11:18:49 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 11:18:49 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 11:18:49 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 11:18:49 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 11:18:49 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1763 ms
+2022.06.30 11:18:50 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 11:18:50 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 11:18:50 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path ''
+2022.06.30 11:18:50 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 3.888 seconds (JVM running for 5.914)
+2022.06.30 11:19:09 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 32336 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 11:19:09 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 2 profiles are active: "i18n", "dev"
+2022.06.30 11:19:09 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 11:19:09 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 11:19:10 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 11:19:10 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 11:19:10 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 11:19:10 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 11:19:11 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 11:19:11 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1709 ms
+2022.06.30 11:19:11 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 11:19:11 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 11:19:11 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path ''
+2022.06.30 11:19:11 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 3.759 seconds (JVM running for 6.584)
+2022.06.30 11:19:37 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022.06.30 11:19:37 CST INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
+2022.06.30 11:19:37 CST INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 1 ms
+2022.06.30 11:25:52 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 32888 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 11:25:52 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 11:25:53 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 11:25:53 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 11:25:55 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 11:25:55 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 11:25:55 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 11:25:55 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 11:25:55 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 11:25:55 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2898 ms
+2022.06.30 11:25:56 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 11:25:56 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 11:25:56 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 11:25:57 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 6.927 seconds (JVM running for 11.054)
+2022.06.30 11:26:37 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 19368 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 11:26:37 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 11:26:37 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 11:26:37 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 11:26:39 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 11:26:39 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 11:26:39 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 11:26:39 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 11:26:39 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 11:26:39 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2119 ms
+2022.06.30 11:26:40 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 11:26:40 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 11:26:40 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 11:26:40 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 4.049 seconds (JVM running for 6.101)
+2022.06.30 11:27:24 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022.06.30 11:27:24 CST INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
+2022.06.30 11:27:24 CST INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 2 ms
+2022.06.30 11:29:42 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 3144 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 11:29:42 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 11:29:42 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 11:29:42 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 11:29:44 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 11:29:44 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 11:29:44 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 11:29:44 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 11:29:44 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 11:29:44 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1725 ms
+2022.06.30 11:29:44 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 11:29:44 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 11:29:45 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 11:29:45 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 3.56 seconds (JVM running for 6.048)
+2022.06.30 11:29:49 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022.06.30 11:29:49 CST INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
+2022.06.30 11:29:49 CST INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 2 ms
+2022.06.30 11:34:20 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 34252 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 11:34:20 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 11:34:20 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 11:34:20 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 11:34:22 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 11:34:22 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 11:34:22 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 11:34:22 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 11:34:22 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 11:34:22 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2342 ms
+2022.06.30 11:34:23 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 11:34:24 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 11:34:24 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 11:34:24 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 5.322 seconds (JVM running for 7.479)
+2022.06.30 11:39:13 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022.06.30 11:39:13 CST INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
+2022.06.30 11:39:13 CST INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 1 ms
+2022.06.30 11:47:44 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 35392 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 11:47:44 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 11:47:45 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 11:47:45 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 11:47:52 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 11:47:52 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 11:47:52 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 11:47:52 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 11:47:53 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 11:47:53 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 8322 ms
+2022.06.30 11:47:55 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 11:47:55 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 11:47:55 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 11:47:55 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 14.085 seconds (JVM running for 16.871)
+2022.06.30 11:48:39 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 35824 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 11:48:39 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 11:48:39 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 11:48:39 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 11:48:41 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 11:48:41 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 11:48:41 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 11:48:41 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 11:48:41 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 11:48:41 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2259 ms
+2022.06.30 11:48:42 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 11:48:42 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 11:48:42 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 11:48:42 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 4.765 seconds (JVM running for 6.799)
+2022.06.30 11:48:49 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022.06.30 11:48:49 CST INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
+2022.06.30 11:48:49 CST INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 2 ms
+2022.06.30 13:41:39 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 28612 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 13:41:39 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 13:41:39 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 13:41:39 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 13:41:41 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 13:41:41 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 13:41:41 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 13:41:41 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 13:41:41 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 13:41:41 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2370 ms
+2022.06.30 13:41:42 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 13:41:42 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 13:41:42 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 13:41:42 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 5.249 seconds (JVM running for 7.582)
+2022.06.30 13:42:08 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022.06.30 13:42:08 CST INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
+2022.06.30 13:42:08 CST INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 2 ms
+2022.06.30 13:50:40 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 33804 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 13:50:40 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 13:50:40 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 13:50:40 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 13:50:43 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 13:50:43 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 13:50:43 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 13:50:43 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 13:50:43 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 13:50:43 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3014 ms
+2022.06.30 13:50:44 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 13:50:44 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 13:50:44 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 13:50:45 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 6.703 seconds (JVM running for 10.917)
+2022.06.30 13:55:10 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 33804 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 13:55:10 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 13:55:12 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 13:55:12 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 13:55:12 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 13:55:12 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 13:55:12 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 13:55:12 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1595 ms
+2022.06.30 13:55:12 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 13:55:12 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 13:55:12 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 13:55:13 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 2.769 seconds (JVM running for 278.912)
+2022.06.30 13:55:13 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2022.06.30 13:55:17 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 33804 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 13:55:17 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 13:55:19 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 13:55:20 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2752 ms
+2022.06.30 13:55:20 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 13:55:21 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 13:55:21 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 4.832 seconds (JVM running for 287.145)
+2022.06.30 13:55:21 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2022.06.30 13:55:30 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 30976 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 13:55:30 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 13:55:30 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 13:55:30 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 13:55:32 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 13:55:32 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 13:55:32 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 13:55:32 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 13:55:32 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 13:55:32 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2242 ms
+2022.06.30 13:55:33 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 13:55:33 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 13:55:33 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 13:55:33 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 4.839 seconds (JVM running for 7.215)
+2022.06.30 13:56:06 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022.06.30 13:56:06 CST INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
+2022.06.30 13:56:06 CST INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 2 ms
+2022.06.30 13:56:43 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 27876 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 13:56:43 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 13:56:43 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 13:56:43 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 13:56:45 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 13:56:45 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 13:56:45 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 13:56:45 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 13:56:45 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 13:56:45 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2644 ms
+2022.06.30 13:56:46 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 13:56:46 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 13:56:46 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 13:56:47 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 5.741 seconds (JVM running for 7.948)
+2022.06.30 13:56:53 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022.06.30 13:56:53 CST INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
+2022.06.30 13:56:53 CST INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 1 ms
+2022.06.30 14:02:49 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 34396 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 14:02:49 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 14:02:49 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 14:02:49 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 14:02:51 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 14:02:51 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:02:51 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 14:02:51 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 14:02:51 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 14:02:51 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2343 ms
+2022.06.30 14:02:52 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 14:02:52 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:02:52 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 14:02:53 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 4.732 seconds (JVM running for 6.32)
+2022.06.30 14:04:12 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 35528 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 14:04:12 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 14:04:12 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 14:04:12 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 14:04:14 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 14:04:14 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:04:14 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 14:04:14 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 14:04:14 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 14:04:14 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2294 ms
+2022.06.30 14:04:15 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 14:04:15 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:04:15 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 14:04:16 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 5.059 seconds (JVM running for 7.641)
+2022.06.30 14:04:21 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022.06.30 14:04:21 CST INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
+2022.06.30 14:04:21 CST INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 0 ms
+2022.06.30 14:05:09 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 35368 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 14:05:09 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 14:05:10 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 14:05:10 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 14:05:15 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 14:05:15 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:05:15 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 14:05:15 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 14:05:16 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 14:05:16 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 6042 ms
+2022.06.30 14:05:17 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 14:05:17 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:05:17 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 14:05:17 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 10.435 seconds (JVM running for 12.742)
+2022.06.30 14:05:50 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 32072 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 14:05:50 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 14:05:50 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 14:05:50 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 14:05:53 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 14:05:53 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:05:53 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 14:05:53 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 14:05:53 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 14:05:53 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2920 ms
+2022.06.30 14:05:54 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 14:05:54 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:05:55 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 14:05:55 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 6.159 seconds (JVM running for 8.525)
+2022.06.30 14:06:01 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022.06.30 14:06:01 CST INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
+2022.06.30 14:06:01 CST INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 1 ms
+2022.06.30 14:09:23 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 32072 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 14:09:23 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 14:09:25 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 14:09:25 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:09:25 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 14:09:25 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 14:09:25 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 14:09:25 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2795 ms
+2022.06.30 14:09:26 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 14:09:26 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:09:26 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 14:09:26 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 3.974 seconds (JVM running for 219.998)
+2022.06.30 14:09:26 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2022.06.30 14:10:23 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 32072 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 14:10:23 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 14:10:24 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 14:10:24 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:10:24 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 14:10:24 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 14:10:24 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 14:10:24 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1590 ms
+2022.06.30 14:10:25 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 14:10:25 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:10:25 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 14:10:25 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 2.331 seconds (JVM running for 278.409)
+2022.06.30 14:10:25 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2022.06.30 14:11:23 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 17464 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 14:11:23 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 14:11:23 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 14:11:23 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 14:11:25 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 14:11:25 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:11:25 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 14:11:25 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 14:11:25 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 14:11:25 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2297 ms
+2022.06.30 14:11:26 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 14:11:26 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:11:26 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 14:11:27 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 4.68 seconds (JVM running for 6.509)
+2022.06.30 14:12:01 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022.06.30 14:12:01 CST INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
+2022.06.30 14:12:01 CST INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 2 ms
+2022.06.30 14:16:28 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 17464 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 14:16:28 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 14:16:29 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 14:16:29 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:16:29 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 14:16:29 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 14:16:29 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 14:16:29 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1117 ms
+2022.06.30 14:16:29 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 14:16:30 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:16:30 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 14:16:30 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 1.909 seconds (JVM running for 309.687)
+2022.06.30 14:16:30 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2022.06.30 14:16:33 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 17464 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 14:16:33 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 14:16:34 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 14:16:34 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:16:34 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 14:16:34 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 14:16:35 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 14:16:35 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1213 ms
+2022.06.30 14:16:35 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 14:16:35 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:16:35 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 14:16:35 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 1.719 seconds (JVM running for 314.823)
+2022.06.30 14:16:35 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2022.06.30 14:16:38 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 17464 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 14:16:38 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 14:16:39 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 14:16:39 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:16:39 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 14:16:39 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 14:16:39 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 14:16:39 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1589 ms
+2022.06.30 14:16:40 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 14:16:40 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:16:40 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 14:16:40 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 2.417 seconds (JVM running for 319.783)
+2022.06.30 14:16:40 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2022.06.30 14:18:55 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 17464 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 14:18:55 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 14:18:57 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 14:18:57 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:18:57 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 14:18:57 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 14:18:57 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 14:18:57 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1475 ms
+2022.06.30 14:18:57 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 14:18:57 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:18:57 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 14:18:58 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 2.481 seconds (JVM running for 457.492)
+2022.06.30 14:18:58 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2022.06.30 14:18:59 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 17464 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 14:18:59 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 14:19:01 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 14:19:01 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:19:01 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 14:19:01 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 14:19:01 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 14:19:01 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2237 ms
+2022.06.30 14:19:02 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 14:19:02 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:19:02 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 14:19:02 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 3.273 seconds (JVM running for 462.087)
+2022.06.30 14:19:02 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2022.06.30 14:21:30 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 24272 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 14:21:30 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 2 profiles are active: "i18n", "dev"
+2022.06.30 14:21:31 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 14:21:31 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:21:31 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 14:21:31 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 14:21:31 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 14:21:31 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1361 ms
+2022.06.30 14:21:32 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 14:21:32 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 14:21:32 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path ''
+2022.06.30 14:21:32 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 2.598 seconds (JVM running for 123.375)
+2022.06.30 14:21:32 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2022.06.30 14:43:22 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 34396 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 14:43:22 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 2 profiles are active: "i18n", "dev"
+2022.06.30 14:43:22 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 14:43:22 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 14:43:24 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8088 (http)
+2022.06.30 14:43:24 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8088"]
+2022.06.30 14:43:24 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 14:43:24 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 14:43:24 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 14:43:24 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2302 ms
+2022.06.30 14:43:24 CST WARN  org.springframework.context.support.AbstractApplicationContext 591 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'test': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'env' in value "${env}"
+2022.06.30 14:43:24 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Stopping service [Tomcat]
+2022.06.30 14:43:24 CST INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 136 logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022.06.30 14:44:35 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 36660 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 14:44:35 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 2 profiles are active: "i18n", "dev"
+2022.06.30 14:44:35 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 14:44:35 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 14:44:37 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8088 (http)
+2022.06.30 14:44:37 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8088"]
+2022.06.30 14:44:37 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 14:44:37 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 14:44:37 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 14:44:37 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2291 ms
+2022.06.30 14:44:37 CST WARN  org.springframework.context.support.AbstractApplicationContext 591 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'test': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'env' in value "${env}"
+2022.06.30 14:44:37 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Stopping service [Tomcat]
+2022.06.30 14:44:37 CST INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 136 logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022.06.30 14:51:01 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 34440 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 14:51:01 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 14:51:01 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 14:51:01 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 14:51:03 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8080 (http)
+2022.06.30 14:51:03 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8080"]
+2022.06.30 14:51:03 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 14:51:03 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 14:51:04 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 14:51:04 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2402 ms
+2022.06.30 14:51:04 CST WARN  org.springframework.context.support.AbstractApplicationContext 591 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'test': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'env' in value "${env}"
+2022.06.30 14:51:04 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Stopping service [Tomcat]
+2022.06.30 14:51:04 CST INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 136 logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022.06.30 14:53:41 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 20044 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 14:53:41 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 14:53:41 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 14:53:41 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 14:53:43 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8080 (http)
+2022.06.30 14:53:43 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8080"]
+2022.06.30 14:53:43 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 14:53:43 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 14:53:43 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 14:53:43 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2312 ms
+2022.06.30 14:53:43 CST WARN  org.springframework.context.support.AbstractApplicationContext 591 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'test': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'env' in value "${env}"
+2022.06.30 14:53:43 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Stopping service [Tomcat]
+2022.06.30 14:53:43 CST INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 136 logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022.06.30 14:54:20 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 33388 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 14:54:20 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 14:54:20 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 14:54:20 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 14:54:24 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8080 (http)
+2022.06.30 14:54:24 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8080"]
+2022.06.30 14:54:24 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 14:54:24 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 14:54:25 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 14:54:25 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 4524 ms
+2022.06.30 14:54:26 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 14:54:26 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8080"]
+2022.06.30 14:54:26 CST WARN  org.springframework.context.support.AbstractApplicationContext 591 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2022.06.30 14:54:26 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Pausing ProtocolHandler ["http-nio-8080"]
+2022.06.30 14:54:26 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Stopping service [Tomcat]
+2022.06.30 14:54:26 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Stopping ProtocolHandler ["http-nio-8080"]
+2022.06.30 14:54:26 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Destroying ProtocolHandler ["http-nio-8080"]
+2022.06.30 14:54:26 CST INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 136 logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022.06.30 14:58:16 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 37816 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 14:58:16 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 1 profile is active: "dev"
+2022.06.30 14:58:16 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 14:58:16 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 14:58:19 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8088 (http)
+2022.06.30 14:58:19 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8088"]
+2022.06.30 14:58:19 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 14:58:19 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 14:58:19 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 14:58:19 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2337 ms
+2022.06.30 14:58:20 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 14:58:20 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8088"]
+2022.06.30 14:58:20 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8088 (http) with context path '/api'
+2022.06.30 14:58:20 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 4.288 seconds (JVM running for 6.278)
+2022.06.30 14:59:36 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022.06.30 14:59:36 CST INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
+2022.06.30 14:59:36 CST INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 1 ms
+2022.06.30 15:04:00 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 37132 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 15:04:00 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 3 profiles are active: "i18n", "swagger", "dev"
+2022.06.30 15:04:00 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 15:04:00 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 15:04:02 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8088 (http)
+2022.06.30 15:04:02 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8088"]
+2022.06.30 15:04:02 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 15:04:02 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 15:04:02 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 15:04:02 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2362 ms
+2022.06.30 15:04:03 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 15:04:03 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8088"]
+2022.06.30 15:04:03 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8088 (http) with context path '/api'
+2022.06.30 15:04:04 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 4.398 seconds (JVM running for 6.312)
+2022.06.30 15:04:10 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022.06.30 15:04:10 CST INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
+2022.06.30 15:04:10 CST INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 1 ms
+2022.06.30 15:10:48 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 37132 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 15:10:48 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 3 profiles are active: "i18n", "swagger", "dev"
+2022.06.30 15:10:52 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8088 (http)
+2022.06.30 15:10:52 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8088"]
+2022.06.30 15:10:52 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 15:10:52 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 15:10:52 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 15:10:52 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3801 ms
+2022.06.30 15:10:55 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 15:10:55 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8088"]
+2022.06.30 15:10:55 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8088 (http) with context path '/api'
+2022.06.30 15:10:55 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 7.896 seconds (JVM running for 418.032)
+2022.06.30 15:10:55 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2022.06.30 15:10:57 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 37132 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 15:10:57 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 3 profiles are active: "i18n", "swagger", "dev"
+2022.06.30 15:10:59 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8088 (http)
+2022.06.30 15:10:59 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8088"]
+2022.06.30 15:10:59 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 15:10:59 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 15:10:59 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 15:10:59 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1663 ms
+2022.06.30 15:10:59 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 15:10:59 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8088"]
+2022.06.30 15:10:59 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8088 (http) with context path '/api'
+2022.06.30 15:11:00 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 2.854 seconds (JVM running for 422.423)
+2022.06.30 15:11:00 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2022.06.30 15:11:03 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 37132 (started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 15:11:03 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 3 profiles are active: "i18n", "swagger", "dev"
+2022.06.30 15:11:04 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8088 (http)
+2022.06.30 15:11:04 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8088"]
+2022.06.30 15:11:04 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 15:11:04 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 15:11:04 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 15:11:04 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1752 ms
+2022.06.30 15:11:05 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 15:11:05 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8088"]
+2022.06.30 15:11:05 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8088 (http) with context path '/api'
+2022.06.30 15:11:05 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 2.497 seconds (JVM running for 427.721)
+2022.06.30 15:11:05 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2022.06.30 15:11:19 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 37132 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 15:11:19 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 3 profiles are active: "i18n", "swagger", "dev"
+2022.06.30 15:11:20 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8088 (http)
+2022.06.30 15:11:20 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1608 ms
+2022.06.30 15:11:20 CST WARN  org.springframework.context.support.AbstractApplicationContext 591 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'test': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'test' in value "${test}"
+2022.06.30 15:11:37 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 34524 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 15:11:37 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 3 profiles are active: "i18n", "swagger", "dev"
+2022.06.30 15:11:38 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 15:11:38 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 15:11:40 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8088 (http)
+2022.06.30 15:11:40 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8088"]
+2022.06.30 15:11:40 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 15:11:40 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 15:11:40 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 15:11:40 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2386 ms
+2022.06.30 15:11:40 CST WARN  org.springframework.context.support.AbstractApplicationContext 591 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'test': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'test' in value "${test}"
+2022.06.30 15:11:40 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Stopping service [Tomcat]
+2022.06.30 15:11:40 CST INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 136 logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022.06.30 15:17:00 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 28160 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 15:17:00 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 3 profiles are active: "i18n", "swagger", "dev"
+2022.06.30 15:17:00 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 15:17:00 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 15:17:03 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 15:17:03 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 15:17:03 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 15:17:03 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 15:17:04 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 15:17:04 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3123 ms
+2022.06.30 15:17:05 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 15:17:05 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 15:17:05 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 15:17:05 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 6.09 seconds (JVM running for 9.4)
+2022.06.30 15:21:41 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 38160 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 15:21:41 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 3 profiles are active: "i18n", "swagger", "dev"
+2022.06.30 15:21:41 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022.06.30 15:21:41 CST INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022.06.30 15:21:44 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 15:21:44 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 15:21:44 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 15:21:44 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 15:21:44 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 15:21:44 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3490 ms
+2022.06.30 15:21:45 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 15:21:46 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 15:21:46 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 15:21:46 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 6.199 seconds (JVM running for 10.52)
+2022.06.30 15:21:56 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 38160 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 15:21:56 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 3 profiles are active: "i18n", "swagger", "dev"
+2022.06.30 15:21:58 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 15:21:58 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 15:21:58 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 15:21:58 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 15:21:59 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 15:21:59 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2381 ms
+2022.06.30 15:21:59 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 15:21:59 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 15:21:59 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 15:21:59 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 3.366 seconds (JVM running for 23.653)
+2022.06.30 15:21:59 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2022.06.30 15:22:01 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 38160 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 15:22:01 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 3 profiles are active: "i18n", "swagger", "dev"
+2022.06.30 15:22:02 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 15:22:02 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 15:22:02 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 15:22:02 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 15:22:02 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 15:22:02 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1049 ms
+2022.06.30 15:22:02 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 15:22:02 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 15:22:02 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 15:22:03 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 1.978 seconds (JVM running for 27.1)
+2022.06.30 15:22:03 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2022.06.30 15:22:05 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 38160 (started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 15:22:05 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 3 profiles are active: "i18n", "swagger", "dev"
+2022.06.30 15:22:06 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8765 (http)
+2022.06.30 15:22:06 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8765"]
+2022.06.30 15:22:06 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 15:22:06 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 15:22:06 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 15:22:06 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1573 ms
+2022.06.30 15:22:06 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 15:22:06 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8765"]
+2022.06.30 15:22:06 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8765 (http) with context path '/api'
+2022.06.30 15:22:07 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 2.195 seconds (JVM running for 31.075)
+2022.06.30 15:22:07 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2022.06.30 15:22:09 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 38160 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 15:22:09 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 3 profiles are active: "i18n", "swagger", "dev"
+2022.06.30 15:22:11 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8088 (http)
+2022.06.30 15:22:11 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8088"]
+2022.06.30 15:22:11 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 15:22:11 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 15:22:12 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 15:22:12 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3299 ms
+2022.06.30 15:22:17 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 15:22:17 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8088"]
+2022.06.30 15:22:17 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8088 (http) with context path '/api'
+2022.06.30 15:22:17 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 9.215 seconds (JVM running for 41.922)
+2022.06.30 15:22:17 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 58 onApplicationEvent - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   SwaggerUiWebMvcConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnProperty (springfox.documentation.swagger-ui.enabled=true) matched (OnPropertyCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022.06.30 15:22:22 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 38160 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 15:22:22 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 3 profiles are active: "i18n", "swagger", "dev"
+2022.06.30 15:22:24 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8088 (http)
+2022.06.30 15:22:24 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8088"]
+2022.06.30 15:22:24 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 15:22:24 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 15:22:25 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 15:22:25 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2881 ms
+2022.06.30 15:22:25 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 15:22:25 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8088"]
+2022.06.30 15:22:25 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8088 (http) with context path '/api'
+2022.06.30 15:22:25 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 4.09 seconds (JVM running for 49.514)
+2022.06.30 15:22:25 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 58 onApplicationEvent - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   SwaggerUiWebMvcConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (springfox.documentation.swagger-ui.enabled=true) found different value in property 'springfox.documentation.swagger-ui.enabled' (OnPropertyCondition)
+      Matched:
+         - found 'session' scope (OnWebApplicationCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022.06.30 15:22:27 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 38160 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 15:22:27 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 3 profiles are active: "i18n", "swagger", "dev"
+2022.06.30 15:22:27 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8088 (http)
+2022.06.30 15:22:27 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8088"]
+2022.06.30 15:22:27 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 15:22:27 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 15:22:27 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 15:22:27 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 789 ms
+2022.06.30 15:22:28 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 15:22:28 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8088"]
+2022.06.30 15:22:28 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8088 (http) with context path '/api'
+2022.06.30 15:22:28 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 1.199 seconds (JVM running for 52.191)
+2022.06.30 15:22:28 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2022.06.30 15:31:26 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 38160 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 15:31:26 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 3 profiles are active: "i18n", "swagger", "dev"
+2022.06.30 15:31:28 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8088 (http)
+2022.06.30 15:31:28 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8088"]
+2022.06.30 15:31:28 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 15:31:28 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 15:31:28 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 15:31:28 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2015 ms
+2022.06.30 15:31:28 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 15:31:28 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8088"]
+2022.06.30 15:31:28 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8088 (http) with context path '/api'
+2022.06.30 15:31:28 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 3.073 seconds (JVM running for 592.944)
+2022.06.30 15:31:28 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2022.06.30 15:31:30 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 38160 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 15:31:30 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 3 profiles are active: "i18n", "swagger", "dev"
+2022.06.30 15:31:31 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8088 (http)
+2022.06.30 15:31:31 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8088"]
+2022.06.30 15:31:31 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 15:31:31 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 15:31:31 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 15:31:31 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1328 ms
+2022.06.30 15:31:32 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 15:31:32 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8088"]
+2022.06.30 15:31:32 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8088 (http) with context path '/api'
+2022.06.30 15:31:32 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 2.205 seconds (JVM running for 596.617)
+2022.06.30 15:31:32 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2022.06.30 15:31:35 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 38160 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 15:31:35 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 2 profiles are active: "swagger", "dev"
+2022.06.30 15:31:36 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8088 (http)
+2022.06.30 15:31:36 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8088"]
+2022.06.30 15:31:36 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 15:31:36 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 15:31:36 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 15:31:36 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1412 ms
+2022.06.30 15:31:37 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 15:31:37 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8088"]
+2022.06.30 15:31:37 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8088 (http) with context path '/api'
+2022.06.30 15:31:37 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 2.114 seconds (JVM running for 601.32)
+2022.06.30 15:31:37 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 58 onApplicationEvent - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   SwaggerUiWebMvcConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnProperty (springfox.documentation.swagger-ui.enabled=true) matched (OnPropertyCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022.06.30 15:31:38 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 38160 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 15:31:38 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 2 profiles are active: "swagger", "dev"
+2022.06.30 15:31:40 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8088 (http)
+2022.06.30 15:31:40 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8088"]
+2022.06.30 15:31:40 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 15:31:40 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 15:31:40 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 15:31:40 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1582 ms
+2022.06.30 15:31:40 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 15:31:40 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8088"]
+2022.06.30 15:31:40 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8088 (http) with context path '/api'
+2022.06.30 15:31:40 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 2.179 seconds (JVM running for 604.873)
+2022.06.30 15:31:40 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2022.06.30 15:31:42 CST INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting ApiApplication using Java 18.0.1.1 on SC-202203161458 with PID 38160 (F:\soft\github\service-api-spring-boot\api\target\classes started by Administrator in F:\soft\github\service-api-spring-boot)
+2022.06.30 15:31:42 CST INFO  org.springframework.boot.SpringApplication 640 logStartupProfileInfo - The following 2 profiles are active: "swagger", "dev"
+2022.06.30 15:31:43 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8088 (http)
+2022.06.30 15:31:43 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-8088"]
+2022.06.30 15:31:43 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+2022.06.30 15:31:43 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022.06.30 15:31:43 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+2022.06.30 15:31:43 CST INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 292 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 960 ms
+2022.06.30 15:31:43 CST INFO  com.github.xiaoymin.knife4j.spring.configuration.Knife4jAutoConfiguration 58 corsFilter - init CorsFilter...
+2022.06.30 15:31:43 CST INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2022.06.30 15:31:43 CST WARN  com.github.xiaoymin.knife4j.spring.extension.OpenApiExtensionResolver 142 readLocations - (Ignores) Failed to read Markdown files,Error Message:class path resource [sign/] cannot be resolved to URL because it does not exist 
+2022.06.30 15:31:44 CST INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-8088"]
+2022.06.30 15:31:44 CST INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8088 (http) with context path '/api'
+2022.06.30 15:31:44 CST INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started ApiApplication in 1.859 seconds (JVM running for 608.214)
+2022.06.30 15:31:44 CST INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 58 onApplicationEvent - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   Knife4jAutoConfiguration matched:
+      - @ConditionalOnProperty (knife4j.enable=true) matched (OnPropertyCondition)
+
+   Knife4jAutoConfiguration#corsFilter matched:
+      - @ConditionalOnProperty (knife4j.cors=true) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.CorsFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   Knife4jAutoConfiguration#markdownResolver matched:
+      - @ConditionalOnProperty (knife4j.enable=true) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: com.github.xiaoymin.knife4j.spring.extension.OpenApiExtensionResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   Knife4jAutoConfiguration#productionSecurityFilter:
+      Did not match:
+         - @ConditionalOnProperty (knife4j.production=true) found different value in property 'knife4j.production' (OnPropertyCondition)
+
+   Knife4jAutoConfiguration#securityBasicAuthFilter:
+      Did not match:
+         - @ConditionalOnProperty (knife4j.basic.enable=true) did not find property 'knife4j.basic.enable' (OnPropertyCondition)
+
+   SwaggerUiWebMvcConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (springfox.documentation.swagger-ui.enabled=true) found different value in property 'springfox.documentation.swagger-ui.enabled' (OnPropertyCondition)
+      Matched:
+         - found 'session' scope (OnWebApplicationCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+

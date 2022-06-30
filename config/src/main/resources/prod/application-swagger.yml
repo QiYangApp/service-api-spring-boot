@@ -7,7 +7,7 @@ knife4j:
   documents:
     -
       group: default
-      name: 歧养
+      name: 歧羊
       locations: classpath:sign/*
   setting:
     language: zh-CN
