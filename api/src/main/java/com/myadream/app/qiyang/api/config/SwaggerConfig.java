@@ -1,4 +1,4 @@
-package com.myadream.app.qiyang.aop.config;
+package com.myadream.app.qiyang.api.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

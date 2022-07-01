@@ -3,7 +3,7 @@ spring:
   config:
     name: api
   profiles:
-    include: i18n
+    include:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher

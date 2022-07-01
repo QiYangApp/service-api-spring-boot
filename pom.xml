@@ -144,6 +144,7 @@
                 <version>${eu-bitwalker-UserAgentUtils.version}</version>
             </dependency>
 
+            <!--  validate hibernate -->
         </dependencies>
 
     </dependencyManagement>

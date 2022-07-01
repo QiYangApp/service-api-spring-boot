@@ -1,17 +1,18 @@
 package com.myadream.app.qiyang.common.api.mode;
 
 import com.myadream.app.qiyang.common.api.StatusEnum;
-import lombok.Data;
+import lombok.Getter;
+import org.springframework.http.HttpStatus;
 
 import java.util.List;
 
-@Data
+@Getter
 public class PageMode {
 
     /**
      * code
      */
-    private Integer code;
+    private HttpStatus code;
 
     /**
      * 返回状态码

@@ -3,6 +3,3 @@ spring:
     basename: i18n/messages/messages
     encoding: UTF-8
     fallbackToSystemLocale: false
-
-test:
-  name: test
