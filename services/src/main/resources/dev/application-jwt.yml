@@ -1,0 +1,3 @@
+jwt:
+  secret: ""
+  expires_second: 3600

@@ -21,16 +21,6 @@
             <groupId>com.myadream.app.qiyang</groupId>
             <artifactId>services</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.myadream.app.qiyang</groupId>
-            <artifactId>config</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.myadream.app.qiyang</groupId>
-            <artifactId>common</artifactId>
-        </dependency>
-
-
         <!-- Swagger UI -->
         <dependency>
             <groupId>io.springfox</groupId>
@@ -82,89 +72,8 @@
         <!--</editor-fold>-->
     </dependencies>
 
-
-    <profiles>
-        <profile>
-            <id>dev</id>
-            <properties>
-                <profiles.active>dev</profiles.active>
-            </properties>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-        </profile>
-        <profile>
-            <id>prod</id>
-            <properties>
-                <profiles.active>prod</profiles.active>
-            </properties>
-        </profile>
-        <profile>
-            <id>test</id>
-            <properties>
-                <profiles.active>test</profiles.active>
-            </properties>
-        </profile>
-    </profiles>
-
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-remote-resources-plugin</artifactId>
-                <version>${maven-remote-resources-plugin.version}</version>
-                <configuration>
-                    <resourceBundles>
-                        <resourceBundle>com.myadream.app.qiyang:config:${com-myadream-app-qiyang-conf.version}
-                        </resourceBundle>
-                    </resourceBundles>
-                    <!--                    <includes>-->
-                    <!--                        <include>**/*.properties</include>-->
-                    <!--                        <include>**/*.yml</include>-->
-                    <!--                    </includes>-->
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>process</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <!--复制配置-->
-            <plugin>
-                <artifactId>maven-resources-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>copy-resource</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>copy-resources</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>${build.outputDirectory}</outputDirectory>
-                            <resources>
-                                <resource>
-                                    <!-- 文件地址 -->
-                                    <directory>
-                                        ${build.directory}/maven-shared-archive-resources/${profiles.active}/
-                                    </directory>
-                                    <includes>
-                                        <include>**/*.properties</include>
-                                        <include>**/*.yml</include>
-                                    </includes>
-                                </resource>
-                            </resources>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
 
-        </plugins>
     </build>
 
 </project>

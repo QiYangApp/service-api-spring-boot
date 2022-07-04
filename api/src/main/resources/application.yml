@@ -1,12 +1,5 @@
-spring:
-  config:
-    name: api
-  mvc:
-    pathmatch:
-      matching-strategy: ant_path_matcher
-  profiles:
-    include: swagger,i18n
+
 server:
-  port: 82
+  port: 83
   servlet:
     context-path: /api

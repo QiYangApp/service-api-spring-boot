@@ -1,8 +1,11 @@
 package com.myadream.app.qiyang.api.controller;
 
 
-import com.myadream.app.qiyang.common.api.RespEntity;
-import com.myadream.app.qiyang.common.api.mode.DefaultMode;
+import com.myadream.app.qiyang.service.entity.os.resp.RespEntity;
+import com.myadream.app.qiyang.service.entity.os.resp.mode.ObjectMode;
+import com.myadream.app.qiyang.service.token.JwtDataSetImpl;
+import com.myadream.app.qiyang.service.utils.jwt.JwtDataSet;
+import com.myadream.app.qiyang.service.utils.jwt.JwtUtil;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -35,6 +38,13 @@ public class TestController {
     public RespEntity testResp() {
         HashMap<String, String> map = new HashMap<>(1);
         map.put("test", "test");
-        return (new DefaultMode<Map<String, String>>()).success(map);
+        return (new ObjectMode<Map<String, String>>()).success(map);
+    }
+
+    @GetMapping("/token")
+    public String testToken() {
+        JwtDataSet dataSet = new JwtDataSetImpl("test");
+
+        return (new JwtUtil()).generate(dataSet);
     }
 }

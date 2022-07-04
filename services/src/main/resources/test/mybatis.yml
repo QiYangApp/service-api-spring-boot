@@ -1,0 +1,6 @@
+# 配置 MyBatis
+mybatis:
+  mapper-locations: classpath:mapper/*
+  type-aliases-package: com.myadream.app.qiyang.repository.entity
+  configuration:
+    map-underscore-to-camel-case: true
