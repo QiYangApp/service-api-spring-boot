@@ -1,4 +1,4 @@
-package com.myadream.app.qiyang.service.utils.jwt;
+package com.myadream.app.qiyang.service.lib.impl.token;
 
 import io.jsonwebtoken.Claims;
 

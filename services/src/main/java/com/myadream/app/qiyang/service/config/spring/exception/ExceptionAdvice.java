@@ -1,4 +1,4 @@
-package com.myadream.app.qiyang.service.advice;
+package com.myadream.app.qiyang.service.config.spring.exception;
 
 import com.myadream.app.qiyang.service.entity.os.resp.RespEntity;
 import com.myadream.app.qiyang.service.entity.os.resp.mode.ObjectMode;
@@ -38,7 +38,7 @@ public class ExceptionAdvice {
     @ExceptionHandler(ParamValidException.class)
     @ResponseStatus(value = HttpStatus.BAD_REQUEST)
     public RespEntity paramValidExceptionHandler(ParamValidException ex) {
-        return (new ObjectMode<List<FieldError>>()).fail(ex.getFieldErrors(), HttpStatus.NOT_ACCEPTABLE, I18nEnum.STATUS_ABNORMAL);
+        return ObjectMode.fail(ex, HttpStatus.NOT_ACCEPTABLE, I18nEnum.STATUS_ABNORMAL);
     }
 
     @ExceptionHandler(BindException.class)
@@ -62,7 +62,7 @@ public class ExceptionAdvice {
     @ExceptionHandler(BizException.class)
     @ResponseStatus(value = HttpStatus.BAD_REQUEST)
     public RespEntity appThrowableException(BizException ex) {
-        return (new ObjectMode<Throwable>()).fail(ex);
+        return ObjectMode.fail(ex);
     }
 
     @ExceptionHandler(Exception.class)
@@ -103,7 +103,7 @@ public class ExceptionAdvice {
 //            put("lineNumber", stackTraceElements.length == 0 ? null : stackTraceElements[0].getLineNumber());
 //        }});
 
-        return (new ObjectMode<Throwable>()).fail(ex);
+        return ObjectMode.fail(ex);
     }
 }
     

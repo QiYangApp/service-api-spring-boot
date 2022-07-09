@@ -1,171 +1,19 @@
-2022.07.05 00:00:28 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 00:00:30 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 00:00:34 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 00:01:05 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 00:01:58 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 00:03:46 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 00:41:10 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 00:42:41 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 00:43:30 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 00:45:04 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 00:55:51 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 00:56:49 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 00:57:53 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 00:59:47 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:00:26 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:00:37 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:00:40 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:04:27 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:07:54 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:07:57 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:11:46 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:13:27 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:13:45 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 57 doBefore - ==========================StartControllerAOP==========================
-2022.07.05 01:13:45 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 58 doBefore - ##########|    URL : http://localhost:83/api/
-2022.07.05 01:13:45 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 59 doBefore - ##########|    HTTP_METHOD : GET
-2022.07.05 01:13:45 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 60 doBefore - ##########|    IP : 127.0.0.1
-2022.07.05 01:13:45 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 61 doBefore - ##########|    CLASS_METHOD : com.myadream.app.qiyang.api.controller.TestController.test
-2022.07.05 01:13:45 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 72 doBefore - ##########|    ARGS : []
-2022.07.05 01:13:45 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 115 doAfterReturning - ##########|    RESPONSE : test
-2022.07.05 01:13:45 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 116 doAfterReturning - ==========================EndControllerAOP==========================
-2022.07.05 01:14:28 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:14:35 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 57 doBefore - ==========================StartControllerAOP==========================
-2022.07.05 01:14:35 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 58 doBefore - ##########|    URL : http://localhost:83/api/
-2022.07.05 01:14:35 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 59 doBefore - ##########|    HTTP_METHOD : GET
-2022.07.05 01:14:35 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 60 doBefore - ##########|    IP : 127.0.0.1
-2022.07.05 01:14:35 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 61 doBefore - ##########|    CLASS_METHOD : com.myadream.app.qiyang.api.controller.TestController.test
-2022.07.05 01:14:35 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 72 doBefore - ##########|    ARGS : []
-2022.07.05 01:14:35 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 115 doAfterReturning - ##########|    RESPONSE : test
-2022.07.05 01:14:35 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 116 doAfterReturning - ==========================EndControllerAOP==========================
-2022.07.05 01:17:02 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:17:08 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 57 doBefore - ==========================StartControllerAOP==========================
-2022.07.05 01:17:08 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 58 doBefore - ##########|    URL : http://localhost:83/api/
-2022.07.05 01:17:08 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 59 doBefore - ##########|    HTTP_METHOD : GET
-2022.07.05 01:17:08 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 60 doBefore - ##########|    IP : 127.0.0.1
-2022.07.05 01:17:08 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 61 doBefore - ##########|    CLASS_METHOD : com.myadream.app.qiyang.api.controller.TestController.test
-2022.07.05 01:17:08 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 72 doBefore - ##########|    ARGS : []
-2022.07.05 01:17:08 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 115 doAfterReturning - ##########|    RESPONSE : test
-2022.07.05 01:17:08 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 116 doAfterReturning - ==========================EndControllerAOP==========================
-2022.07.05 01:17:42 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:17:51 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 57 doBefore - ==========================StartControllerAOP==========================
-2022.07.05 01:17:51 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 58 doBefore - ##########|    URL : http://localhost:83/api/
-2022.07.05 01:17:51 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 59 doBefore - ##########|    HTTP_METHOD : GET
-2022.07.05 01:17:51 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 60 doBefore - ##########|    IP : 127.0.0.1
-2022.07.05 01:17:51 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 61 doBefore - ##########|    CLASS_METHOD : com.myadream.app.qiyang.api.controller.TestController.test
-2022.07.05 01:17:51 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 72 doBefore - ##########|    ARGS : []
-2022.07.05 01:17:51 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 115 doAfterReturning - ##########|    RESPONSE : test
-2022.07.05 01:17:51 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 116 doAfterReturning - ==========================EndControllerAOP==========================
-2022.07.05 01:18:49 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:18:55 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 57 doBefore - ==========================StartControllerAOP==========================
-2022.07.05 01:18:55 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 58 doBefore - ##########|    URL : http://localhost:83/api/
-2022.07.05 01:18:55 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 59 doBefore - ##########|    HTTP_METHOD : GET
-2022.07.05 01:18:55 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 60 doBefore - ##########|    IP : 127.0.0.1
-2022.07.05 01:18:55 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 61 doBefore - ##########|    CLASS_METHOD : com.myadream.app.qiyang.api.controller.TestController.test
-2022.07.05 01:18:55 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 72 doBefore - ##########|    ARGS : []
-2022.07.05 01:18:55 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 115 doAfterReturning - ##########|    RESPONSE : test
-2022.07.05 01:18:55 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 116 doAfterReturning - ==========================EndControllerAOP==========================
-2022.07.05 01:19:18 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:19:23 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 57 doBefore - ==========================StartControllerAOP==========================
-2022.07.05 01:19:23 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 58 doBefore - ##########|    URL : http://localhost:83/api/
-2022.07.05 01:19:23 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 59 doBefore - ##########|    HTTP_METHOD : GET
-2022.07.05 01:19:23 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 60 doBefore - ##########|    IP : 127.0.0.1
-2022.07.05 01:19:23 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 61 doBefore - ##########|    CLASS_METHOD : com.myadream.app.qiyang.api.controller.TestController.test
-2022.07.05 01:19:23 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 72 doBefore - ##########|    ARGS : []
-2022.07.05 01:19:23 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 115 doAfterReturning - ##########|    RESPONSE : test
-2022.07.05 01:19:23 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 116 doAfterReturning - ==========================EndControllerAOP==========================
-2022.07.05 01:20:19 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:20:23 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:20:28 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 57 doBefore - ==========================StartControllerAOP==========================
-2022.07.05 01:20:28 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 58 doBefore - ##########|    URL : http://localhost:83/api/
-2022.07.05 01:20:28 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 59 doBefore - ##########|    HTTP_METHOD : GET
-2022.07.05 01:20:28 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 60 doBefore - ##########|    IP : 127.0.0.1
-2022.07.05 01:20:28 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 61 doBefore - ##########|    CLASS_METHOD : com.myadream.app.qiyang.api.controller.TestController.test
-2022.07.05 01:20:28 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 72 doBefore - ##########|    ARGS : []
-2022.07.05 01:20:28 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 115 doAfterReturning - ##########|    RESPONSE : test
-2022.07.05 01:20:28 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 116 doAfterReturning - ==========================EndControllerAOP==========================
-2022.07.05 01:20:50 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:22:57 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:23:01 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:23:04 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 57 doBefore - ==========================StartControllerAOP==========================
-2022.07.05 01:23:04 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 58 doBefore - ##########|    URL : http://localhost:83/api/map
-2022.07.05 01:23:04 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 59 doBefore - ##########|    HTTP_METHOD : GET
-2022.07.05 01:23:04 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 60 doBefore - ##########|    IP : 127.0.0.1
-2022.07.05 01:23:04 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 61 doBefore - ##########|    CLASS_METHOD : com.myadream.app.qiyang.api.controller.TestController.testMap
-2022.07.05 01:23:04 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 72 doBefore - ##########|    ARGS : []
-2022.07.05 01:23:05 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 115 doAfterReturning - ##########|    RESPONSE : {test=test}
-2022.07.05 01:23:05 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 116 doAfterReturning - ==========================EndControllerAOP==========================
-2022.07.05 01:23:10 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 57 doBefore - ==========================StartControllerAOP==========================
-2022.07.05 01:23:10 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 58 doBefore - ##########|    URL : http://localhost:83/api/
-2022.07.05 01:23:10 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 59 doBefore - ##########|    HTTP_METHOD : GET
-2022.07.05 01:23:10 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 60 doBefore - ##########|    IP : 127.0.0.1
-2022.07.05 01:23:10 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 61 doBefore - ##########|    CLASS_METHOD : com.myadream.app.qiyang.api.controller.TestController.test
-2022.07.05 01:23:10 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 72 doBefore - ##########|    ARGS : []
-2022.07.05 01:23:10 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 115 doAfterReturning - ##########|    RESPONSE : test
-2022.07.05 01:23:10 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 116 doAfterReturning - ==========================EndControllerAOP==========================
-2022.07.05 01:24:37 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:24:40 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:24:47 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 57 doBefore - ==========================StartControllerAOP==========================
-2022.07.05 01:24:47 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 58 doBefore - ##########|    URL : http://localhost:83/api/
-2022.07.05 01:24:47 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 59 doBefore - ##########|    HTTP_METHOD : GET
-2022.07.05 01:24:47 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 60 doBefore - ##########|    IP : 127.0.0.1
-2022.07.05 01:24:47 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 61 doBefore - ##########|    CLASS_METHOD : com.myadream.app.qiyang.api.controller.TestController.test
-2022.07.05 01:24:47 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 72 doBefore - ##########|    ARGS : []
-2022.07.05 01:24:47 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 115 doAfterReturning - ##########|    RESPONSE : test
-2022.07.05 01:24:47 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 116 doAfterReturning - ==========================EndControllerAOP==========================
-2022.07.05 01:24:57 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 57 doBefore - ==========================StartControllerAOP==========================
-2022.07.05 01:24:57 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 58 doBefore - ##########|    URL : http://localhost:83/api/map
-2022.07.05 01:24:57 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 59 doBefore - ##########|    HTTP_METHOD : GET
-2022.07.05 01:24:57 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 60 doBefore - ##########|    IP : 127.0.0.1
-2022.07.05 01:24:57 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 61 doBefore - ##########|    CLASS_METHOD : com.myadream.app.qiyang.api.controller.TestController.testMap
-2022.07.05 01:24:57 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 72 doBefore - ##########|    ARGS : []
-2022.07.05 01:24:57 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 115 doAfterReturning - ##########|    RESPONSE : {test=test}
-2022.07.05 01:24:57 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 116 doAfterReturning - ==========================EndControllerAOP==========================
-2022.07.05 01:31:29 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:31:33 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:31:45 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:31:49 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:32:04 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:32:10 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 57 doBefore - ==========================StartControllerAOP==========================
-2022.07.05 01:32:10 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 58 doBefore - ##########|    URL : http://localhost:83/api/
-2022.07.05 01:32:10 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 59 doBefore - ##########|    HTTP_METHOD : GET
-2022.07.05 01:32:10 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 60 doBefore - ##########|    IP : 127.0.0.1
-2022.07.05 01:32:10 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 61 doBefore - ##########|    CLASS_METHOD : com.myadream.app.qiyang.api.controller.TestController.test
-2022.07.05 01:32:10 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 72 doBefore - ##########|    ARGS : []
-2022.07.05 01:32:11 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 115 doAfterReturning - ##########|    RESPONSE : test
-2022.07.05 01:32:11 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 116 doAfterReturning - ==========================EndControllerAOP==========================
-2022.07.05 01:33:03 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 57 doBefore - ==========================StartControllerAOP==========================
-2022.07.05 01:33:03 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 58 doBefore - ##########|    URL : http://localhost:83/api/token
-2022.07.05 01:33:03 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 59 doBefore - ##########|    HTTP_METHOD : GET
-2022.07.05 01:33:03 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 60 doBefore - ##########|    IP : 127.0.0.1
-2022.07.05 01:33:03 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 61 doBefore - ##########|    CLASS_METHOD : com.myadream.app.qiyang.api.controller.TestController.testToken
-2022.07.05 01:33:03 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 72 doBefore - ##########|    ARGS : []
-2022.07.05 01:33:57 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:34:04 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 57 doBefore - ==========================StartControllerAOP==========================
-2022.07.05 01:34:04 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 58 doBefore - ##########|    URL : http://localhost:83/api/token
-2022.07.05 01:34:04 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 59 doBefore - ##########|    HTTP_METHOD : GET
-2022.07.05 01:34:04 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 60 doBefore - ##########|    IP : 127.0.0.1
-2022.07.05 01:34:04 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 61 doBefore - ##########|    CLASS_METHOD : com.myadream.app.qiyang.api.controller.TestController.testToken
-2022.07.05 01:34:04 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 72 doBefore - ##########|    ARGS : []
-2022.07.05 01:35:15 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:35:19 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:35:24 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 57 doBefore - ==========================StartControllerAOP==========================
-2022.07.05 01:35:24 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 58 doBefore - ##########|    URL : http://localhost:83/api/token
-2022.07.05 01:35:24 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 59 doBefore - ##########|    HTTP_METHOD : GET
-2022.07.05 01:35:24 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 60 doBefore - ##########|    IP : 127.0.0.1
-2022.07.05 01:35:24 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 61 doBefore - ##########|    CLASS_METHOD : com.myadream.app.qiyang.api.controller.TestController.testToken
-2022.07.05 01:35:24 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 72 doBefore - ##########|    ARGS : []
-2022.07.05 01:36:20 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:36:24 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 57 doBefore - ==========================StartControllerAOP==========================
-2022.07.05 01:36:24 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 58 doBefore - ##########|    URL : http://localhost:83/api/token
-2022.07.05 01:36:24 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 59 doBefore - ##########|    HTTP_METHOD : GET
-2022.07.05 01:36:24 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 60 doBefore - ##########|    IP : 127.0.0.1
-2022.07.05 01:36:24 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 61 doBefore - ##########|    CLASS_METHOD : com.myadream.app.qiyang.api.controller.TestController.testToken
-2022.07.05 01:36:24 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 72 doBefore - ##########|    ARGS : []
-2022.07.05 01:36:34 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:36:38 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
-2022.07.05 01:36:44 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 57 doBefore - ==========================StartControllerAOP==========================
-2022.07.05 01:36:44 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 58 doBefore - ##########|    URL : http://localhost:83/api/token
-2022.07.05 01:36:44 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 59 doBefore - ##########|    HTTP_METHOD : GET
-2022.07.05 01:36:44 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 60 doBefore - ##########|    IP : 127.0.0.1
-2022.07.05 01:36:44 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 61 doBefore - ##########|    CLASS_METHOD : com.myadream.app.qiyang.api.controller.TestController.testToken
-2022.07.05 01:36:44 CST DEBUG com.myadream.app.qiyang.service.aop.ControllerLoggerAop 72 doBefore - ##########|    ARGS : []
+2022.07.09 10:24:26 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022.07.09 11:00:09 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022.07.09 11:00:42 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022.07.09 12:03:58 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022.07.09 13:45:44 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022.07.09 13:47:36 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022.07.09 13:49:52 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022.07.09 14:26:50 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022.07.09 14:27:48 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022.07.09 14:27:59 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022.07.09 14:28:06 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022.07.09 17:12:52 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022.07.09 17:14:01 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022.07.09 17:14:21 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022.07.09 17:14:35 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022.07.09 17:14:51 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022.07.09 17:20:00 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022.07.09 17:20:17 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022.07.09 17:38:47 CST DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.7.0, Spring v5.3.20

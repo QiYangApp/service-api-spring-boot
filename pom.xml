@@ -39,7 +39,8 @@
         <spring-boot-starter-log4j2.version>2.7.0</spring-boot-starter-log4j2.version>
         <org-hehibernate-validator.version>6.0.10.Final</org-hehibernate-validator.version>
         <com-alibaba-druid.version>1.0.31</com-alibaba-druid.version>
-        <io-jsonwebtoken-jjwt.version>0.7.0</io-jsonwebtoken-jjwt.version>
+        <io-jsonwebtoken-jjwt.version>0.9.0</io-jsonwebtoken-jjwt.version>
+        <cn-hutool.all>4.5.7</cn-hutool.all>
     </properties>
 
     <dependencyManagement>
@@ -147,12 +148,23 @@
                 <artifactId>jjwt</artifactId>
                 <version>${io-jsonwebtoken-jjwt.version}</version>
             </dependency>
+
+
+            <!--Hutool Java工具包-->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${cn-hutool.all}</version>
+            </dependency>
+
+
         </dependencies>
 
     </dependencyManagement>
 
 
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>

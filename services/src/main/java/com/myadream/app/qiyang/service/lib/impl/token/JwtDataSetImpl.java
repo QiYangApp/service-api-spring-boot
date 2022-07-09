@@ -1,6 +1,5 @@
-package com.myadream.app.qiyang.service.token;
+package com.myadream.app.qiyang.service.lib.impl.token;
 
-import com.myadream.app.qiyang.service.utils.jwt.JwtDataSet;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.impl.DefaultClaims;
 import lombok.Data;

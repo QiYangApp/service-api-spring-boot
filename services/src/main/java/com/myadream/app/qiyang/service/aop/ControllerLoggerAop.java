@@ -101,7 +101,7 @@ public class ControllerLoggerAop {
             // 抛出异常，交给上层处理
             logger.error(HEAD + "参数校验发生错误 ===> {}", errors.toString());
             ParamValidException ex = new ParamValidException(errors);
-            logger.error(HEAD + "RESPONSE.ERROR : " + JSON.toJSONString((new ObjectMode()).fail(ex.getFieldErrors())));
+            logger.error(HEAD + "RESPONSE.ERROR : " + JSON.toJSONString(ObjectMode.fail(ex)));
             logger.error("==========================ErrorEndControllerAOP==========================");
             throw new ParamValidException(errors);
         }

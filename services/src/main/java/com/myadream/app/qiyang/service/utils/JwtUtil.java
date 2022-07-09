@@ -1,5 +1,7 @@
-package com.myadream.app.qiyang.service.utils.jwt;
+package com.myadream.app.qiyang.service.utils;
 
+import com.myadream.app.qiyang.service.lib.JwtService;
+import com.myadream.app.qiyang.service.lib.impl.token.JwtDataSet;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +10,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import java.util.Base64;
 import java.util.Date;
 
-public class JwtUtil implements IJwtUtil {
+public class JwtUtil implements JwtService {
     @Autowired
     private RedisTemplate<String, String> redisTemplate;
 

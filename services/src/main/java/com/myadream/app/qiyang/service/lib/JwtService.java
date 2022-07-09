@@ -1,8 +1,10 @@
-package com.myadream.app.qiyang.service.utils.jwt;
+package com.myadream.app.qiyang.service.lib;
+
+import com.myadream.app.qiyang.service.lib.impl.token.JwtDataSet;
 
 import java.util.Date;
 
-public interface IJwtUtil {
+public interface JwtService {
     /***
      * 生成token
      */

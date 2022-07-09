@@ -43,7 +43,7 @@ Configuration:
           TimeBasedTriggeringPolicy:
             interval: "1"
             modulate: true
-          SizeBasedTriggeringPolicy : "30MB"
+#          SizeBasedTriggeringPolicy : "30MB"
       - name: ROLLING_INFO_FILE
         fileName: "${log.path}/${project.name}-info.log"
         filePattern: "${log.path}/$${date:yyyy-MM}/${project.name}-%d{yyyy-MM-dd}-info_%i.log.gz"
@@ -61,7 +61,7 @@ Configuration:
           TimeBasedTriggeringPolicy:
             interval: "1"
             modulate: true
-          SizeBasedTriggeringPolicy : "30MB"
+#          SizeBasedTriggeringPolicy : "30MB"
       - name: ROLLING_ERROR_FILE
         fileName: "${log.path}/${project.name}-error.log"
         filePattern: "${log.path}/$${date:yyyy-MM}/${project.name}-%d{yyyy-MM-dd}-error_%i.log.gz"
@@ -76,7 +76,7 @@ Configuration:
           TimeBasedTriggeringPolicy:
             interval: "1"
             modulate: true
-          SizeBasedTriggeringPolicy : "30MB"
+#          SizeBasedTriggeringPolicy : "30MB"
 
   Loggers:
     Root:

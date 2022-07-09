@@ -1,4 +1,4 @@
-package com.myadream.app.qiyang.service.advice;
+package com.myadream.app.qiyang.service.config.spring.mvc;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -50,12 +50,12 @@ public class ResponseAdvice implements ResponseBodyAdvice<Object> {
             return body;
         } else if (body instanceof String) {
             try {
-                return (new ObjectMapper()).writeValueAsString((new ObjectMode<>()).success(body));
+                return (new ObjectMapper()).writeValueAsString(ObjectMode.success(body));
             } catch (JsonProcessingException e) {
                 throw new BizException(e.getMessage());
             }
         } else {
-            return (new ObjectMode<>()).success(body);
+            return ObjectMode.success(body);
         }
     }
 }

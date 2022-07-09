@@ -1,4 +1,4 @@
-package com.myadream.app.qiyang.service.config;
+package com.myadream.app.qiyang.service.config.spring.mvc;
 
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
