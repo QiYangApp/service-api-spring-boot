@@ -1,0 +1,23 @@
+secure:
+  ignored:
+    urls: #安全路径白名单
+      - /swagger-ui/**
+      - /doc.html
+      - /swagger-resources/**
+      - /**/v2/api-docs
+      - /**/*.html
+      - /**/*.js
+      - /**/*.css
+      - /**/*.png
+      - /**/*.map
+      - /favicon.ico
+      - /actuator/**
+      - /druid/**
+      - /admin/login
+      - /admin/register
+      - /admin/info
+      - /admin/logout
+      - /minio/upload
+      - /swagger-ui.html
+      - /v2/api-docs
+      - /webjars/**
