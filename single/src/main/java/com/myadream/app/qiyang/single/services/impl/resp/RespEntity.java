@@ -1,10 +1,11 @@
-package com.myadream.app.qiyang.single.resp;
+package com.myadream.app.qiyang.single.services.impl.resp;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import com.myadream.app.qiyang.single.resp.mode.ObjectMode;
-import com.myadream.app.qiyang.single.resp.mode.PageMode;
-import com.myadream.app.qiyang.single.resp.mode.PageStructure;
+import com.myadream.app.qiyang.single.enums.os.StatusEnum;
+import com.myadream.app.qiyang.single.services.impl.resp.mode.ObjectMode;
+import com.myadream.app.qiyang.single.services.impl.resp.mode.PageMode;
+import com.myadream.app.qiyang.single.services.impl.resp.mode.PageStructure;
 import lombok.Getter;
 
 import java.io.Serializable;

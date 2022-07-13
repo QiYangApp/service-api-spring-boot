@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 
 @SpringBootApplication
-@ControllerAdvice(basePackages  =  "com.myadream.app.qiyang.single.controller.*")
 public class ApiApplication {
     public static void main(String[] args) {
         SpringApplication.run(ApiApplication.class, args);

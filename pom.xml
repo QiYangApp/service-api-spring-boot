@@ -42,6 +42,7 @@
         <com-alibaba-druid.version>1.0.31</com-alibaba-druid.version>
         <io-jsonwebtoken-jjwt.version>0.9.0</io-jsonwebtoken-jjwt.version>
         <cn-hutool.all>4.5.7</cn-hutool.all>
+        <dom4j.version>1.6.1</dom4j.version>
     </properties>
 
     <dependencyManagement>
@@ -100,7 +101,6 @@
             <dependency>
                 <groupId>com.github.xiaoymin</groupId>
                 <artifactId>knife4j-spring-boot-starter</artifactId>
-                <!--在引用时请在maven中央仓库搜索3.X最新版本号-->
                 <version>${knife4j-spring-boot-starter.version}</version>
             </dependency>
 
@@ -156,6 +156,14 @@
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-all</artifactId>
                 <version>${cn-hutool.all}</version>
+            </dependency>
+
+
+            <!--一个处理xml的框架-->
+            <dependency>
+                <groupId>dom4j</groupId>
+                <artifactId>dom4j</artifactId>
+                <version>${dom4j.version}</version>
             </dependency>
 
 

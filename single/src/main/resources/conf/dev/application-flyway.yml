@@ -1,7 +1,7 @@
 spring:
   flyway:
     # 启用Flyway功能
-    enabled: true
+    enabled: false
     # 禁用Flyway的clean命令，使用clean命令会删除schema下的所有表
     clean-disabled: true
     # 设置Flyway的SQL脚本路径

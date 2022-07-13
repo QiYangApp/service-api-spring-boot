@@ -1,5 +1,6 @@
 package com.myadream.app.qiyang.single.config.spring.mvc;
 
+import com.github.xiaoymin.knife4j.spring.annotations.EnableKnife4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
@@ -20,15 +21,13 @@ import java.util.List;
  * @author gaojian
  */
 @Configuration
-@EnableSwagger2
-public class SwaggerConfig {
+public class SwaggerConfig implements WebMvcConfigurer {
     public static final String AUTHORIZATION_HEADER = "Authorization";
 
     @Bean
     public Docket api() {
         return new Docket(DocumentationType.OAS_30)
                 .apiInfo(apiInfo())
-//                .pathMapping("/")
                 .securityContexts(Arrays.asList(securityContext()))
                 .securitySchemes(Arrays.asList(apiKey()))
                 .select()
@@ -37,6 +36,11 @@ public class SwaggerConfig {
                 .build();
     }
 
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("doc.html").addResourceLocations("classpath:/META-INF/resources/");
+        registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
+    }
 
     private ApiInfo apiInfo() {
         return new ApiInfo("qiYang",

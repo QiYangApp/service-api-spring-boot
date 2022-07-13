@@ -3,8 +3,10 @@ secure:
     urls: #安全路径白名单
       - /swagger-ui/**
       - /doc.html
+      - /doc.html/**
       - /swagger-resources/**
       - /**/v2/api-docs
+      - /**/v3/api-docs
       - /**/*.html
       - /**/*.js
       - /**/*.css
@@ -19,5 +21,4 @@ secure:
       - /admin/logout
       - /minio/upload
       - /swagger-ui.html
-      - /v2/api-docs
       - /webjars/**

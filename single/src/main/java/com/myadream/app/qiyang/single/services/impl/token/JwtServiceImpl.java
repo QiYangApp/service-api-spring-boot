@@ -4,6 +4,7 @@ import com.myadream.app.qiyang.single.services.JwtService;
 import com.myadream.app.qiyang.single.utils.JwtUtil;
 import com.myadream.app.qiyang.single.utils.RedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import java.util.Base64;

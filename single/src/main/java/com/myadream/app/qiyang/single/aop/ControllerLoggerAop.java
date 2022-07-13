@@ -3,7 +3,7 @@ package com.myadream.app.qiyang.single.aop;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONException;
 import com.myadream.app.qiyang.single.exception.ParamValidException;
-import com.myadream.app.qiyang.single.resp.mode.ObjectMode;
+import com.myadream.app.qiyang.single.services.impl.resp.mode.ObjectMode;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;

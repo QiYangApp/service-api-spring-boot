@@ -1,8 +1,8 @@
-package com.myadream.app.qiyang.single.resp.mode;
+package com.myadream.app.qiyang.single.services.impl.resp.mode;
 
 import com.myadream.app.qiyang.single.enums.os.I18nEnum;
-import com.myadream.app.qiyang.single.resp.RespEntity;
-import com.myadream.app.qiyang.single.resp.StatusEnum;
+import com.myadream.app.qiyang.single.services.impl.resp.RespEntity;
+import com.myadream.app.qiyang.single.enums.os.StatusEnum;
 import com.myadream.app.qiyang.single.utils.I18nMessageUtil;
 import lombok.Getter;
 import org.springframework.http.HttpStatus;
@@ -63,6 +63,10 @@ public class ObjectMode<T> implements RespMode {
 
     public static RespEntity fail(Throwable throwable) {
         return (new ObjectMode<>()).resp(throwable, I18nEnum.STATUS_ABNORMAL, HttpStatus.INTERNAL_SERVER_ERROR, StatusEnum.FAIL);
+    }
+
+    public static RespEntity fail(HttpStatus code, I18nEnum message) {
+        return (new ObjectMode<>()).resp("", message, code, StatusEnum.FAIL);
     }
 
     public static RespEntity fail(Throwable throwable, HttpStatus code, I18nEnum message) {

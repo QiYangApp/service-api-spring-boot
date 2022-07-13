@@ -1,6 +1,6 @@
-package com.myadream.app.qiyang.single.resp.mode;
+package com.myadream.app.qiyang.single.services.impl.resp.mode;
 
-import com.myadream.app.qiyang.single.resp.StatusEnum;
+import com.myadream.app.qiyang.single.enums.os.StatusEnum;
 import lombok.Getter;
 import org.springframework.http.HttpStatus;
 

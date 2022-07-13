@@ -1,4 +1,4 @@
-package com.myadream.app.qiyang.single.resp;
+package com.myadream.app.qiyang.single.enums.os;
 
 public enum StatusEnum {
     /**

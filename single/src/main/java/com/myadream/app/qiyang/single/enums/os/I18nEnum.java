@@ -24,7 +24,12 @@ public enum I18nEnum {
     /**
      * 状态-处理异常
      */
-    STATUS_ABNORMAL("i18n.status.abnormal");
+    STATUS_ABNORMAL("i18n.status.abnormal"),
+
+    /**
+     * http-资源不存在
+     */
+    HTTP_NOT_FOUND("i18n.http.not_found");
 
 
     private final String key;

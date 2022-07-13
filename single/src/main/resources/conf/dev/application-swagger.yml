@@ -29,7 +29,7 @@ knife4j:
     #    footerCustomContent: Apache License 2.0 | Copyright  2019-[浙江八一菜刀股份有限公司](https://gitee.com/xiaoym/knife4j)
     enableDynamicParameter: false
     enableDebug: true
-    enableOpenApi: false
+    enableOpenApi: true
     enableGroup: true
   cors: true
   production: false
