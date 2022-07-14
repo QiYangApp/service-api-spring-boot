@@ -1,4 +1,4 @@
-package com.myadream.app.qiyang.single.repositorys.dto;
+package com.myadream.app.qiyang.single.entity.dto;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
@@ -61,31 +61,5 @@ public class QyMemberRoleRelationEntity {
 
     public void setDeletedAt(Timestamp deletedAt) {
         this.deletedAt = deletedAt;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        QyMemberRoleRelationEntity that = (QyMemberRoleRelationEntity) o;
-
-        if (id != that.id) return false;
-        if (memberId != that.memberId) return false;
-        if (roleId != that.roleId) return false;
-        if (createdAt != null ? !createdAt.equals(that.createdAt) : that.createdAt != null) return false;
-        if (deletedAt != null ? !deletedAt.equals(that.deletedAt) : that.deletedAt != null) return false;
-
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = id;
-        result = 31 * result + memberId;
-        result = 31 * result + roleId;
-        result = 31 * result + (createdAt != null ? createdAt.hashCode() : 0);
-        result = 31 * result + (deletedAt != null ? deletedAt.hashCode() : 0);
-        return result;
     }
 }

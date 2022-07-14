@@ -1,4 +1,4 @@
-package com.myadream.app.qiyang.single.repositorys.dto;
+package com.myadream.app.qiyang.single.entity.dto;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
@@ -105,39 +105,5 @@ public class QyMemberAuthorizeRecordEntity {
 
     public void setCreatedAt(Timestamp createdAt) {
         this.createdAt = createdAt;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        QyMemberAuthorizeRecordEntity that = (QyMemberAuthorizeRecordEntity) o;
-
-        if (id != that.id) return false;
-        if (memberId != that.memberId) return false;
-        if (channel != null ? !channel.equals(that.channel) : that.channel != null) return false;
-        if (device != null ? !device.equals(that.device) : that.device != null) return false;
-        if (deviceDetail != null ? !deviceDetail.equals(that.deviceDetail) : that.deviceDetail != null) return false;
-        if (ipv4 != null ? !ipv4.equals(that.ipv4) : that.ipv4 != null) return false;
-        if (ipv6 != null ? !ipv6.equals(that.ipv6) : that.ipv6 != null) return false;
-        if (snapshot != null ? !snapshot.equals(that.snapshot) : that.snapshot != null) return false;
-        if (createdAt != null ? !createdAt.equals(that.createdAt) : that.createdAt != null) return false;
-
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = id;
-        result = 31 * result + memberId;
-        result = 31 * result + (channel != null ? channel.hashCode() : 0);
-        result = 31 * result + (device != null ? device.hashCode() : 0);
-        result = 31 * result + (deviceDetail != null ? deviceDetail.hashCode() : 0);
-        result = 31 * result + (ipv4 != null ? ipv4.hashCode() : 0);
-        result = 31 * result + (ipv6 != null ? ipv6.hashCode() : 0);
-        result = 31 * result + (snapshot != null ? snapshot.hashCode() : 0);
-        result = 31 * result + (createdAt != null ? createdAt.hashCode() : 0);
-        return result;
     }
 }
