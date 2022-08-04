@@ -1,5 +1,6 @@
 package com.myadream.app.qiyang.single.utils;
 
+import com.myadream.app.qiyang.single.enums.os.I18nEnum;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -21,6 +22,10 @@ public class I18nMessageUtil implements ApplicationContextAware {
 
     public static String getMessage(String key) {
         return messageSource.getMessage(key, null, key, currentLocale);
+    }
+
+    public static String getMessage(I18nEnum key) {
+        return messageSource.getMessage(key.getKey(), null, key.getKey(), currentLocale);
     }
 
     public static String getMessage(String key, Locale locale) {

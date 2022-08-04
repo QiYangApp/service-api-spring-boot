@@ -24,6 +24,11 @@ public interface JwtService {
     public Boolean updateExpired(String token, Long date);
 
     /**
+     * 更新数据
+     */
+    public Boolean update(String token, JwtDataSet jwtDataSet);
+
+    /**
      * 获取token数据
      * @return
      */

@@ -18,10 +18,9 @@ public class JwtServiceImpl implements JwtService {
     @Override
     public String generate(JwtDataSet jwtDataSet) {
         String token = JwtUtil.generate(jwtDataSet);
-
         String base64Token = Base64.getEncoder().encodeToString(token.getBytes());
 
-        redisUtil.set(base64Token, token, 3600);
+        redisUtil.set(base64Token, jwtDataSet, jwtDataSet.getExpirationTime());
 
         return base64Token;
     }
@@ -39,6 +38,13 @@ public class JwtServiceImpl implements JwtService {
     @Override
     public Boolean updateExpired(String token, Long date) {
         return redisUtil.expire(token, date);
+    }
+
+    @Override
+    public Boolean update(String token, JwtDataSet jwtDataSet) {
+        redisUtil.set(token, jwtDataSet, jwtDataSet.getExpirationTime());
+
+        return true;
     }
 
     @Override
