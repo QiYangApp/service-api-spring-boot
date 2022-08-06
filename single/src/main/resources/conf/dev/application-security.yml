@@ -15,10 +15,10 @@ secure:
       - /favicon.ico
       - /actuator/**
       - /druid/**
+      - /api/login
+      - /api/register
       - /admin/login
       - /admin/register
-      - /admin/info
       - /admin/logout
-      - /minio/upload
       - /swagger-ui.html
       - /webjars/**

@@ -1,22 +1,29 @@
 package com.myadream.app.qiyang.single.services;
 
-import org.springframework.security.access.ConfigAttribute;
+import com.myadream.app.qiyang.single.entity.dto.QyRoleEntity;
+import com.myadream.app.qiyang.single.entity.dto.QyRouterEntity;
 
-import java.util.Map;
+import java.util.Collection;
 
 public interface DynamicSecurityService {
     /**
      * 加载资源ANT通配符和资源对应MAP
      */
-    Map<String, ConfigAttribute> getRouteByRuleId(Long roleId);
+    Collection<QyRouterEntity> getRouteByRuleId(Long roleId);
 
     /**
      * 获取所有路由
      */
-    Map<String, ConfigAttribute> getRouteByMemberId(Long memberId);
+    Collection<QyRoleEntity> getRouteByMemberId(Long memberId);
 
     /**
      * 获取所有路由
      */
-    Map<String, ConfigAttribute> getAllRoute();
+    Collection<QyRouterEntity> getAllRoute();
+
+    /**
+     * 获取当前登录会员授权路由
+     */
+    Collection<QyRouterEntity> getCurrentAuthorizeRoute();
+
 }

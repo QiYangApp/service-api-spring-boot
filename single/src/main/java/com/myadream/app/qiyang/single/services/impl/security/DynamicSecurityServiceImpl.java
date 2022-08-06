@@ -1,15 +1,16 @@
 package com.myadream.app.qiyang.single.services.impl.security;
 
+import com.myadream.app.qiyang.single.entity.dto.QyRoleEntity;
 import com.myadream.app.qiyang.single.entity.dto.QyRouterEntity;
+import com.myadream.app.qiyang.single.entity.po.authorize.AuthorizedPo;
 import com.myadream.app.qiyang.single.repositorys.RouterRepository;
+import com.myadream.app.qiyang.single.services.AuthorizeService;
 import com.myadream.app.qiyang.single.services.DynamicSecurityService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.ConfigAttribute;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
 
 @Service
 public class DynamicSecurityServiceImpl implements DynamicSecurityService {
@@ -17,38 +18,33 @@ public class DynamicSecurityServiceImpl implements DynamicSecurityService {
     @Autowired
     private RouterRepository routerRepository;
 
-    public Map<String, ConfigAttribute> getRouteByMemberId(Long memberId)
-    {
-       return new HashMap<>();
+    @Autowired
+    private AuthorizeService authorizeService;
+
+    public Collection<QyRoleEntity> getRouteByMemberId(Long memberId) {
+        return routerRepository.getPermissionRoutesByMemberId(memberId);
     }
 
-    public Map<String, ConfigAttribute> getAllRoute()
-    {
-       return new HashMap<>();
+    public Collection<QyRouterEntity> getAllRoute() {
+        return routerRepository.findAll();
     }
 
     @Override
-    public Map<String, ConfigAttribute> getRouteByRuleId(Long roleId) {
-        Collection<QyRouterEntity> routes = routerRepository.getPermissionRoutesByRoleId(roleId);
-        if (routes.isEmpty()) {
-            return new HashMap<>(0);
+    public Collection<QyRouterEntity> getCurrentAuthorizeRoute() {
+        String token = authorizeService.getCurrentAuthorizeToken();
+        if (token == null) {
+            return new ArrayList<>();
+        }
+        AuthorizedPo authorizedPo = authorizeService.getAuthorizeInfo(token);
+        if (authorizedPo == null) {
+            return new ArrayList<>();
         }
 
-        HashMap<String, ConfigAttribute> configAttributes = new HashMap<>(routes.size());
+        return authorizedPo.getRouters();
+    }
 
-//        routes.forEach(item -> {
-//            configAttributes.put(, item);
-//        });
-//
-//        return routes.stream().map()
-
-        return new HashMap<>(1){{
-            put("test", new ConfigAttribute() {
-                @Override
-                public String getAttribute() {
-                    return "test";
-                }
-            });
-        }};
+    @Override
+    public Collection<QyRouterEntity> getRouteByRuleId(Long roleId) {
+        return routerRepository.getPermissionRoutesByRoleId(roleId);
     }
 }

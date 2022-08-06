@@ -1,16 +1,15 @@
 package com.myadream.app.qiyang.single.services.impl.security;
 
-import cn.hutool.core.util.URLUtil;
+import com.myadream.app.qiyang.single.entity.dto.QyRouterEntity;
 import com.myadream.app.qiyang.single.services.DynamicSecurityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.ConfigAttribute;
-import org.springframework.security.web.FilterInvocation;
+import org.springframework.security.access.SecurityConfig;
 import org.springframework.security.web.access.intercept.FilterInvocationSecurityMetadataSource;
-import org.springframework.util.AntPathMatcher;
-import org.springframework.util.PathMatcher;
 
-import javax.annotation.PostConstruct;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 /**
  * 动态权限数据源，用于获取动态权限规则
@@ -18,44 +17,17 @@ import java.util.*;
  */
 public class DynamicSecurityMetadataSource implements FilterInvocationSecurityMetadataSource {
 
-    private static Map<String, ConfigAttribute> configAttributeMap = null;
     @Autowired
     private DynamicSecurityService dynamicSecurityService;
 
-    @PostConstruct
-    public void loadDataSource() {
-
-        configAttributeMap = dynamicSecurityService.getRouteByMemberId(0L);
-    }
-
-    public void clearDataSource() {
-        configAttributeMap.clear();
-        configAttributeMap = null;
-    }
-
     @Override
     public Collection<ConfigAttribute> getAttributes(Object o) throws IllegalArgumentException {
-        if (configAttributeMap == null) {
-            this.loadDataSource();
-        }
-        List<ConfigAttribute> configAttributes = new ArrayList<>();
-        //获取当前访问的路径
-        String url = ((FilterInvocation) o).getRequestUrl();
-        String path = URLUtil.getPath(url);
-        PathMatcher pathMatcher = new AntPathMatcher();
-        //获取访问该路径所需资源
-        for (String pattern : configAttributeMap.keySet()) {
-            if (pathMatcher.match(pattern, path)) {
-                configAttributes.add(configAttributeMap.get(pattern));
-            }
-        }
-        // 未设置操作请求权限，返回空集合
-        return configAttributes;
+        return format(dynamicSecurityService.getCurrentAuthorizeRoute());
     }
 
     @Override
     public Collection<ConfigAttribute> getAllConfigAttributes() {
-        return null;
+        return format(dynamicSecurityService.getAllRoute());
     }
 
     @Override
@@ -63,4 +35,22 @@ public class DynamicSecurityMetadataSource implements FilterInvocationSecurityMe
         return true;
     }
 
+    /**
+     * 格式化路由
+     *
+     * @param routes 路由
+     */
+    private Collection<ConfigAttribute> format(Collection<QyRouterEntity> routes) {
+        List<ConfigAttribute> configAttributes = new ArrayList<>();
+
+        //添加当前登录用户授权可访问路由
+        for (QyRouterEntity qyRouterEntity : routes) {
+            configAttributes.add(
+                    new SecurityConfig(qyRouterEntity.getRoute())
+            );
+        }
+
+        // 未设置操作请求权限，返回空集合
+        return configAttributes;
+    }
 }

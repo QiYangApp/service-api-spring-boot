@@ -9,8 +9,12 @@ import com.myadream.app.qiyang.single.services.AuthorizeService;
 import com.myadream.app.qiyang.single.services.JwtService;
 import com.myadream.app.qiyang.single.services.impl.token.JwtDataSetImpl;
 import com.myadream.app.qiyang.single.utils.RedisUtil;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Objects;
 
@@ -27,11 +31,23 @@ public class AuthorizeServiceImpl implements AuthorizeService {
 
     private final RedisUtil redisUtil;
 
-    public AuthorizeServiceImpl(JwtService jwtService, RouterRepository routerRepository, MemberRoleRepository memberRoleRepository, RedisUtil redisUtil) {
+    private HttpServletRequest request;
+
+    @Value("${jwt.tokenHeader}")
+    private String tokenHeader;
+
+    public AuthorizeServiceImpl(
+            JwtService jwtService,
+            RouterRepository routerRepository,
+            MemberRoleRepository memberRoleRepository,
+            RedisUtil redisUtil,
+            HttpServletRequest request
+    ) {
         this.jwtService = jwtService;
         this.routerRepository = routerRepository;
         this.memberRoleRepository = memberRoleRepository;
         this.redisUtil = redisUtil;
+        this.request = request;
     }
 
     @Override
@@ -56,6 +72,11 @@ public class AuthorizeServiceImpl implements AuthorizeService {
         redisUtil.set(generateMemberWithCacheKey(qyMemberEntity), authorizedPo.getToken());
 
         return true;
+    }
+
+    @Override
+    public String getCurrentAuthorizeToken() {
+        return request.getHeader(this.tokenHeader);
     }
 
     /**
@@ -112,5 +133,17 @@ public class AuthorizeServiceImpl implements AuthorizeService {
     @Override
     public AuthorizedPo getAuthorizeInfo(String token) {
         return (AuthorizedPo) jwtService.get(token);
+    }
+
+    @Override
+    public UserDetails getAuthorizeDetails(String token) {
+        AuthorizedPo authorize = (AuthorizedPo) jwtService.get(token);
+        if (authorize != null) {
+
+
+            return new User(authorize.getQyMemberEntity().getAccount(), null, authorize.getRoles());
+        }
+        return rnull;
+
     }
 }

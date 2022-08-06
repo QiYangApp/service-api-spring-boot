@@ -4,6 +4,7 @@ import com.myadream.app.qiyang.single.entity.dto.QyMemberEntity;
 import com.myadream.app.qiyang.single.entity.dto.QyRoleEntity;
 import com.myadream.app.qiyang.single.entity.dto.QyRouterEntity;
 import lombok.Data;
+import org.springframework.security.core.GrantedAuthority;
 
 import java.util.Collection;
 

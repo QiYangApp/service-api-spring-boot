@@ -2,6 +2,7 @@ package com.myadream.app.qiyang.single.services;
 
 import com.myadream.app.qiyang.single.entity.dto.QyMemberEntity;
 import com.myadream.app.qiyang.single.entity.po.authorize.AuthorizedPo;
+import org.springframework.security.core.userdetails.UserDetails;
 
 public interface AuthorizeService {
 
@@ -9,6 +10,13 @@ public interface AuthorizeService {
      * 授权
      */
     boolean authorize(QyMemberEntity qyMemberEntity);
+
+    /**
+     * 获取当前授权token
+     *
+     * @return
+     */
+    String getCurrentAuthorizeToken();
 
     /**
      * 移除授权
@@ -25,10 +33,16 @@ public interface AuthorizeService {
      */
     AuthorizedPo getAuthorizeInfo(QyMemberEntity qyMemberEntity);
 
-    AuthorizedPo
-
     /**
      * 根据token 获取授权信息
      */
     AuthorizedPo getAuthorizeInfo(String token);
+
+
+    /**
+     * 获取 details
+     *
+     * @param token
+     */
+    UserDetails getAuthorizeDetails(String token);
 }
