@@ -14,7 +14,6 @@ public interface AuthorizeService {
     /**
      * 获取当前授权token
      *
-     * @return
      */
     String getCurrentAuthorizeToken();
 
@@ -29,6 +28,11 @@ public interface AuthorizeService {
     boolean isExist(AuthorizedPo authorizedPo);
 
     /**
+     * 检查是否存在
+     */
+    boolean isExist(String token);
+
+    /**
      * 获取授权信息
      */
     AuthorizedPo getAuthorizeInfo(QyMemberEntity qyMemberEntity);
@@ -37,12 +41,4 @@ public interface AuthorizeService {
      * 根据token 获取授权信息
      */
     AuthorizedPo getAuthorizeInfo(String token);
-
-
-    /**
-     * 获取 details
-     *
-     * @param token
-     */
-    UserDetails getAuthorizeDetails(String token);
 }

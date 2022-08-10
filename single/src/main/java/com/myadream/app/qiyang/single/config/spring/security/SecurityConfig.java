@@ -18,7 +18,7 @@ import org.springframework.security.web.access.intercept.FilterSecurityIntercept
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
-public class SecurityConfig {
+public class SecurityConfig  {
     @Autowired
     private IgnoreUrlsConfig ignoreUrlsConfig;
     @Autowired
@@ -31,7 +31,6 @@ public class SecurityConfig {
     private DynamicSecurityService dynamicSecurityService;
     @Autowired
     private DynamicSecurityFilter dynamicSecurityFilter;
-
 
     @Bean
     SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception {

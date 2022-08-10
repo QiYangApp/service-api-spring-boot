@@ -9,7 +9,11 @@ import com.myadream.app.qiyang.single.services.AuthorizeService;
 import com.myadream.app.qiyang.single.services.JwtService;
 import com.myadream.app.qiyang.single.services.impl.token.JwtDataSetImpl;
 import com.myadream.app.qiyang.single.utils.RedisUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
@@ -22,6 +26,7 @@ import java.util.Objects;
  * @author myadream
  */
 @Service
+@Slf4j
 public class AuthorizeServiceImpl implements AuthorizeService {
     private final JwtService jwtService;
 
@@ -52,26 +57,40 @@ public class AuthorizeServiceImpl implements AuthorizeService {
 
     @Override
     public boolean authorize(QyMemberEntity qyMemberEntity) {
-        if (qyMemberEntity.getId() == 0) {
+        try {
+            if (qyMemberEntity.getId() == 0) {
+                return false;
+            }
+
+            //不是已激活情况下不允许登录
+            if (!Objects.equals(qyMemberEntity.getState(), MemberStateEnum.ACTIVATED.getState())) {
+                return false;
+            }
+
+            AuthorizedPo authorizedPo = new AuthorizedPo();
+            authorizedPo.setQyMemberEntity(qyMemberEntity);
+            authorizedPo.setRoles(routerRepository.getPermissionRoutesByMemberId((long) qyMemberEntity.getId()));
+            authorizedPo.setRoles(memberRoleRepository.getAllByMemberId((long) qyMemberEntity.getId()));
+
+            authorizedPo = jwtAuthorize(authorizedPo);
+
+            //二次记录token 放在后续通过会员查询或操作缓存信息
+            redisUtil.set(generateMemberWithCacheKey(qyMemberEntity), authorizedPo.getToken());
+
+            authorizeSecurity(authorizedPo.getQyMemberEntity());
+        } catch (AuthenticationException e) {
+            log.warn("授权错误");
             return false;
         }
 
-        //不是已激活情况下不允许登录
-        if (!Objects.equals(qyMemberEntity.getState(), MemberStateEnum.ACTIVATED.getState())) {
-            return false;
-        }
-
-        AuthorizedPo authorizedPo = new AuthorizedPo();
-        authorizedPo.setQyMemberEntity(qyMemberEntity);
-        authorizedPo.setRoles(routerRepository.getPermissionRoutesByMemberId((long) qyMemberEntity.getId()));
-        authorizedPo.setRoles(memberRoleRepository.getAllByMemberId((long) qyMemberEntity.getId()));
-
-        authorizedPo = jwtAuthorize(authorizedPo);
-
-        //二次记录token 放在后续通过会员查询或操作缓存信息
-        redisUtil.set(generateMemberWithCacheKey(qyMemberEntity), authorizedPo.getToken());
 
         return true;
+    }
+
+    private void authorizeSecurity(QyMemberEntity qyMemberEntity)
+    {
+        UsernamePasswordAuthenticationToken token = new UsernamePasswordAuthenticationToken(qyMemberEntity.getAccount(), null);
+        SecurityContextHolder.getContext().setAuthentication(token);
     }
 
     @Override
@@ -121,6 +140,11 @@ public class AuthorizeServiceImpl implements AuthorizeService {
     }
 
     @Override
+    public boolean isExist(String token) {
+        return jwtService.exist(token);
+    }
+
+    @Override
     public AuthorizedPo getAuthorizeInfo(QyMemberEntity qyMemberEntity) {
         String token = (String) redisUtil.get(generateMemberWithCacheKey(qyMemberEntity));
         if ("".equals(token)) {
@@ -133,17 +157,5 @@ public class AuthorizeServiceImpl implements AuthorizeService {
     @Override
     public AuthorizedPo getAuthorizeInfo(String token) {
         return (AuthorizedPo) jwtService.get(token);
-    }
-
-    @Override
-    public UserDetails getAuthorizeDetails(String token) {
-        AuthorizedPo authorize = (AuthorizedPo) jwtService.get(token);
-        if (authorize != null) {
-
-
-            return new User(authorize.getQyMemberEntity().getAccount(), null, authorize.getRoles());
-        }
-        return rnull;
-
     }
 }
