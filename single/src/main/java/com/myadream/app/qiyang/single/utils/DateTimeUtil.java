@@ -3,6 +3,7 @@ package com.myadream.app.qiyang.single.utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.sql.Timestamp;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -19,6 +20,16 @@ public class DateTimeUtil {
         ca.setTime(date);
         ca.add(Calendar.SECOND, (int) duration.getSeconds());
         return ca.getTime();
+    }
+
+    public static Timestamp getCurrentTimestamp() {
+        return new Timestamp(DateTimeUtil.getCurrentTime ());
+    }
+
+    public static long getCurrentTime() {
+        Calendar cal=Calendar.getInstance();
+
+       return cal.getTimeInMillis() ;
     }
 
     public static String dateFormat(Date date) {
