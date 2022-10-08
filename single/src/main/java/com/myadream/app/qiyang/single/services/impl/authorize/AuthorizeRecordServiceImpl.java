@@ -9,9 +9,8 @@ import com.myadream.app.qiyang.single.utils.DateTimeUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.sql.Timestamp;
+import javax.servlet.http.HttpServletRequest;
 import java.util.Collection;
-import java.util.Date;
 
 @Service
 public class AuthorizeRecordServiceImpl implements AuthorizeRecordService {
@@ -19,19 +18,28 @@ public class AuthorizeRecordServiceImpl implements AuthorizeRecordService {
     @Autowired
     private MemberAuthorizeRecordRepository authorizeRecordRepository;
 
+    @Autowired
+    private HttpServletRequest request;
+
+    @Override
+    public void addAuthorizeRecord(QyMemberAuthorizeRecordEntity authorizeRecordEntity) {
+        authorizeRecordEntity.setCreatedAt(DateTimeUtil.getCurrentTimestamp());
+        this.authorizeRecordRepository.save(authorizeRecordEntity);
+    }
+
     @Override
     public void authorize(AuthorizedPo authorizedPo) {
         QyMemberAuthorizeRecordEntity qyMemberAuthorizeRecord = new QyMemberAuthorizeRecordEntity();
         qyMemberAuthorizeRecord.setChannel("");
-        qyMemberAuthorizeRecord.setDevice("");
+        qyMemberAuthorizeRecord.setDevice(request.getHeader());
         qyMemberAuthorizeRecord.setMemberId(authorizedPo.getQyMemberEntity().getId());
         qyMemberAuthorizeRecord.setCreatedAt(DateTimeUtil.getCurrentTimestamp());
-        qyMemberAuthorizeRecord.setIpv4("");
+        qyMemberAuthorizeRecord.setIpv4(request.getRemoteAddr());
         qyMemberAuthorizeRecord.setIpv6("");
         qyMemberAuthorizeRecord.setDeviceDetail("");
         qyMemberAuthorizeRecord.setSnapshot("");
 
-       this.authorizeRecordRepository.save(qyMemberAuthorizeRecord);
+        this.addAuthorizeRecord(qyMemberAuthorizeRecord);
     }
 
     @Override

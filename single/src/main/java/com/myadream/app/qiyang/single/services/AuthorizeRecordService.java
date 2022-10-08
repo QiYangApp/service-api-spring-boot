@@ -7,6 +7,14 @@ import com.myadream.app.qiyang.single.entity.po.authorize.AuthorizedPo;
 import java.util.Collection;
 
 public interface AuthorizeRecordService {
+
+    /**
+     * 添加授权记录
+     *
+     * @param authorizeRecordEntity
+     */
+    public void addAuthorizeRecord(QyMemberAuthorizeRecordEntity authorizeRecordEntity);
+
     /**
      *
      * @param authorizedPo 授权信息
