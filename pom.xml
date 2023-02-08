@@ -2,185 +2,33 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <packaging>pom</packaging>
-    <modules>
-        <!--        <module>api</module>-->
-        <!--        <module>services</module>-->
-        <module>single</module>
-    </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.0</version>
+        <version>3.0.2</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.myadream.app.qiyang</groupId>
-    <artifactId>service-api</artifactId>
+    <groupId>com.myadream.app.qiYang</groupId>
+    <artifactId>spring-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>service-api-springboot</name>
-    <description>service-api-springboot</description>
-
+    <packaging>pom</packaging>
+    <name>spring-api</name>
+    <description>spring-api</description>
+    <modules>
+        <module>api</module>
+        <module>services</module>
+        <module>common</module>
+        <module>repository</module>
+        <module>entity</module>
+    </modules>
     <properties>
-        <java.version>11</java.version>
-        <repackage.classifier/>
-        <spring-native.version>0.12.0-SNAPSHOT</spring-native.version>
+        <java.version>17</java.version>
+        <kotlin.version>1.8.10</kotlin.version>
 
-        <com-myadream-app-qiyang-api.version>0.0.1-SNAPSHOT</com-myadream-app-qiyang-api.version>
-        <com-myadream-app-qiyang-services.version>0.0.1-SNAPSHOT</com-myadream-app-qiyang-services.version>
-
-        <maven-remote-resources-plugin.version>1.7.0</maven-remote-resources-plugin.version>
-
-        <mybatis-spring-boot-starter.version>2.1.4</mybatis-spring-boot-starter.version>
-        <tk-mybatis-mapper.version>4.1.5</tk-mybatis-mapper.version>
-        <com-alibaba-fastjson.version>2.0.3</com-alibaba-fastjson.version>
-        <springfox-boot-starter.version>3.0.0</springfox-boot-starter.version>
-        <knife4j-spring-boot-starter.version>3.0.3</knife4j-spring-boot-starter.version>
-        <eu-bitwalker-UserAgentUtils.version>1.21</eu-bitwalker-UserAgentUtils.version>
-        <com-alibaba-fastjson.version>2.0.3</com-alibaba-fastjson.version>
-        <spring-boot-starter-log4j2.version>2.7.0</spring-boot-starter-log4j2.version>
-        <org-hehibernate-validator.version>6.0.10.Final</org-hehibernate-validator.version>
-        <com-alibaba-druid.version>1.0.31</com-alibaba-druid.version>
-        <io-jsonwebtoken-jjwt.version>0.9.0</io-jsonwebtoken-jjwt.version>
-        <cn-hutool.all>4.5.7</cn-hutool.all>
-        <dom4j.version>1.6.1</dom4j.version>
-        <spring-mobile-device.version>1.1.5.RELEASE</spring-mobile-device.version>
+        <com-myadream-app-qiYang-common.version>0.0.1-SNAPSHOT</com-myadream-app-qiYang-common.version>
     </properties>
 
-    <dependencyManagement>
-        <dependencies>
-            <!--            <dependency>-->
-            <!--                <groupId>com.myadream.app.qiyang</groupId>-->
-            <!--                <artifactId>api</artifactId>-->
-            <!--                <version>${com-myadream-app-qiyang-api.version}</version>-->
-            <!--            </dependency>-->
-            <!--            <dependency>-->
-            <!--                <groupId>com.myadream.app.qiyang</groupId>-->
-            <!--                <artifactId>services</artifactId>-->
-            <!--                <version>${com-myadream-app-qiyang-services.version}</version>-->
-            <!--            </dependency>-->
-
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>fastjson</artifactId>
-                <version>${com-alibaba-fastjson.version}</version>
-            </dependency>
-            <!--  validate hibernate -->
-            <dependency>
-                <groupId>org.hibernate</groupId>
-                <artifactId>hibernate-validator</artifactId>
-                <version>${org-hehibernate-validator.version}</version>
-            </dependency>
-
-
-            <!--           <dependency>-->
-            <!--               <groupId>org.springframework.boot</groupId>-->
-            <!--               <artifactId>spring-boot-starter-jdbc</artifactId>-->
-            <!--           </dependency>-->
-            <!--           <dependency>-->
-            <!--               <groupId>org.springframework.boot</groupId>-->
-            <!--               <artifactId>spring-boot-starter-web</artifactId>-->
-            <!--           </dependency>-->
-            <!--           <dependency>-->
-            <!--               <groupId>mysql</groupId>-->
-            <!--               <artifactId>mysql-connector-java</artifactId>-->
-            <!--               <scope>runtime</scope>-->
-            <!--           </dependency>-->
-            <!--           <dependency>-->
-            <!--               <groupId>org.springframework.boot</groupId>-->
-            <!--               <artifactId>spring-boot-starter-test</artifactId>-->
-            <!--               <scope>test</scope>-->
-            <!--           </dependency>-->
-
-            <!--            swagger api -->
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-boot-starter</artifactId>
-                <version>${springfox-boot-starter.version}</version>
-            </dependency>
-
-            <!--            swagger api 增强-->
-            <dependency>
-                <groupId>com.github.xiaoymin</groupId>
-                <artifactId>knife4j-spring-boot-starter</artifactId>
-                <version>${knife4j-spring-boot-starter.version}</version>
-            </dependency>
-
-            <!--            mybatis-->
-            <dependency>
-                <groupId>org.mybatis.spring.boot</groupId>
-                <artifactId>mybatis-spring-boot-starter</artifactId>
-                <version>${mybatis-spring-boot-starter.version}</version>
-            </dependency>
-            <!--        优化生成dto-->
-            <dependency>
-                <groupId>tk.mybatis</groupId>
-                <artifactId>mapper</artifactId>
-                <version>${tk-mybatis-mapper.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>fastjson</artifactId>
-                <version>${com-alibaba-fastjson.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.experimental</groupId>
-                <artifactId>spring-native</artifactId>
-                <version>${spring-native.version}</version>
-            </dependency>
-
-            <!-- 解析 UserAgent 信息 -->
-            <dependency>
-                <groupId>eu.bitwalker</groupId>
-                <artifactId>UserAgentUtils</artifactId>
-                <version>${eu-bitwalker-UserAgentUtils.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>druid</artifactId>
-                <version>${com-alibaba-druid.version}</version>
-            </dependency>
-
-            <!--  validate hibernate -->
-
-            <!--JWT-->
-            <dependency>
-                <groupId>io.jsonwebtoken</groupId>
-                <artifactId>jjwt</artifactId>
-                <version>${io-jsonwebtoken-jjwt.version}</version>
-            </dependency>
-
-
-            <!--Hutool Java工具包-->
-            <dependency>
-                <groupId>cn.hutool</groupId>
-                <artifactId>hutool-all</artifactId>
-                <version>${cn-hutool.all}</version>
-            </dependency>
-
-
-            <!--一个处理xml的框架-->
-            <dependency>
-                <groupId>dom4j</groupId>
-                <artifactId>dom4j</artifactId>
-                <version>${dom4j.version}</version>
-            </dependency>
-
-            <!--获取设备信息-->
-            <dependency>
-                <groupId>org.springframework.mobile</groupId>
-                <artifactId>spring-mobile-device</artifactId>
-                <version>${spring-mobile-device.version}</version>
-            </dependency>
-
-        </dependencies>
-
-    </dependencyManagement>
-
-
     <dependencies>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -188,143 +36,181 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
-
-        <!-- 引入log4j2依赖 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-log4j2</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.dataformat</groupId>
-            <artifactId>jackson-dataformat-yaml</artifactId>
-        </dependency>
-        <!--<editor-fold desc="LOG4J2">-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-            <!-- exclude掉spring-boot的默认log配置 -->
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-logging</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
-
     </dependencies>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.myadream.app.qiYang</groupId>
+                <artifactId>common</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.myadream.app.qiYang</groupId>
+                <artifactId>repository</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.myadream.app.qiYang</groupId>
+                <artifactId>services</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.myadream.app.qiYang</groupId>
+                <artifactId>api</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.myadream.app.qiYang</groupId>
+                <artifactId>entity</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-stdlib-jdk8</artifactId>
+                <version>${kotlin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-test</artifactId>
+                <version>${kotlin.version}</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <build>
+
         <finalName>${project.artifactId}-${project.version}</finalName>
-        <!--        <plugins>-->
-        <!--            <plugin>-->
-        <!--                <groupId>org.springframework.boot</groupId>-->
-        <!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
-        <!--                <configuration>-->
-        <!--                    <excludes>-->
-        <!--                        <exclude>-->
-        <!--                            <groupId>org.projectlombok</groupId>-->
-        <!--                            <artifactId>lombok</artifactId>-->
-        <!--                        </exclude>-->
-        <!--                    </excludes>-->
-        <!--                    <classifier>${repackage.classifier}</classifier>-->
-        <!--                    <image>-->
-        <!--                        <builder>paketobuildpacks/builder:tiny</builder>-->
-        <!--                        <env>-->
-        <!--                            <BP_NATIVE_IMAGE>true</BP_NATIVE_IMAGE>-->
-        <!--                        </env>-->
-        <!--                    </image>-->
-        <!--                </configuration>-->
-        <!--            </plugin>-->
-        <!--            <plugin>-->
-        <!--                <groupId>org.springframework.experimental</groupId>-->
-        <!--                <artifactId>spring-aot-maven-plugin</artifactId>-->
-        <!--                <version>${spring-native.version}</version>-->
-        <!--                <executions>-->
-        <!--                    <execution>-->
-        <!--                        <id>test-generate</id>-->
-        <!--                        <goals>-->
-        <!--                            <goal>test-generate</goal>-->
-        <!--                        </goals>-->
-        <!--                    </execution>-->
-        <!--                    <execution>-->
-        <!--                        <id>generate</id>-->
-        <!--                        <goals>-->
-        <!--                            <goal>generate</goal>-->
-        <!--                        </goals>-->
-        <!--                    </execution>-->
-        <!--                </executions>-->
-        <!--            </plugin>-->
-        <!--        </plugins>-->
+        <plugins>
+            <plugin>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-maven-plugin</artifactId>
+                <version>${kotlin.version}</version>
+                <executions>
+                    <execution>
+                        <id>compile</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                        <configuration>
+                            <sourceDirs>
+                                <source>src/main/java</source>
+                                <source>target/generated-sources/annotations</source>
+                            </sourceDirs>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>test-compile</id>
+                        <phase>test-compile</phase>
+                        <goals>
+                            <goal>test-compile</goal>
+                        </goals>
+                        <configuration>
+                            <sourceDirs>
+                                <source>src/test/java</source>
+                                <source>target/generated-test-sources/test-annotations</source>
+                            </sourceDirs>
+                        </configuration>
+                    </execution>
+                </executions>
+                <configuration>
+                    <jvmTarget>1.8</jvmTarget>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>compile</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>testCompile</id>
+                        <phase>test-compile</phase>
+                        <goals>
+                            <goal>testCompile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.graalvm.buildtools</groupId>
+                <artifactId>native-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
+
     <repositories>
         <repository>
-            <id>spring-snapshots</id>
-            <name>Spring Snapshots</name>
-            <url>https://repo.spring.io/snapshot</url>
+            <id>spring</id>
+            <url>https://maven.aliyun.com/repository/spring</url>
             <releases>
-                <enabled>false</enabled>
+                <enabled>true</enabled>
             </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
         </repository>
     </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>spring-snapshots</id>
-            <name>Spring Snapshots</name>
-            <url>https://repo.spring.io/snapshot</url>
-        </pluginRepository>
-    </pluginRepositories>
+    <!--    <build>-->
+    <!--        <plugins>-->
+    <!--            <plugin>-->
+    <!--                <groupId>org.hibernate.orm.tooling</groupId>-->
+    <!--                <artifactId>hibernate-enhance-maven-plugin</artifactId>-->
+    <!--                <version>${hibernate.version}</version>-->
+    <!--                <executions>-->
+    <!--                    <execution>-->
+    <!--                        <id>enhance</id>-->
+    <!--                        <goals>-->
+    <!--                            <goal>enhance</goal>-->
+    <!--                        </goals>-->
+    <!--                        <configuration>-->
+    <!--                            <enableLazyInitialization>true</enableLazyInitialization>-->
+    <!--                            <enableDirtyTracking>true</enableDirtyTracking>-->
+    <!--                            <enableAssociationManagement>true</enableAssociationManagement>-->
+    <!--                        </configuration>-->
+    <!--                    </execution>-->
+    <!--                </executions>-->
+    <!--            </plugin>-->
+    <!--            <plugin>-->
+    <!--                <groupId>org.graalvm.buildtools</groupId>-->
+    <!--                <artifactId>native-maven-plugin</artifactId>-->
+    <!--            </plugin>-->
+    <!--            <plugin>-->
+    <!--                <groupId>org.springframework.boot</groupId>-->
+    <!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
+    <!--                <configuration>-->
+    <!--                    <excludes>-->
+    <!--                        <exclude>-->
+    <!--                            <groupId>org.projectlombok</groupId>-->
+    <!--                            <artifactId>lombok</artifactId>-->
+    <!--                        </exclude>-->
+    <!--                    </excludes>-->
+    <!--                </configuration>-->
+    <!--            </plugin>-->
+    <!--        </plugins>-->
+    <!--    </build>-->
 
-    <!--    <profiles>-->
-    <!--        <profile>-->
-    <!--            <id>native</id>-->
-    <!--            <properties>-->
-    <!--                <repackage.classifier>exec</repackage.classifier>-->
-    <!--                <native-buildtools.version>0.9.11</native-buildtools.version>-->
-    <!--            </properties>-->
-    <!--            <dependencies>-->
-    <!--                <dependency>-->
-    <!--                    <groupId>org.junit.platform</groupId>-->
-    <!--                    <artifactId>junit-platform-launcher</artifactId>-->
-    <!--                    <scope>test</scope>-->
-    <!--                </dependency>-->
-    <!--            </dependencies>-->
-    <!--            <build>-->
-    <!--                <plugins>-->
-    <!--                    <plugin>-->
-    <!--                        <groupId>org.graalvm.buildtools</groupId>-->
-    <!--                        <artifactId>native-maven-plugin</artifactId>-->
-    <!--                        <version>${native-buildtools.version}</version>-->
-    <!--                        <extensions>true</extensions>-->
-    <!--                        <executions>-->
-    <!--                            <execution>-->
-    <!--                                <id>test-native</id>-->
-    <!--                                <phase>test</phase>-->
-    <!--                                <goals>-->
-    <!--                                    <goal>test</goal>-->
-    <!--                                </goals>-->
-    <!--                            </execution>-->
-    <!--                            <execution>-->
-    <!--                                <id>build-native</id>-->
-    <!--                                <phase>package</phase>-->
-    <!--                                <goals>-->
-    <!--                                    <goal>build</goal>-->
-    <!--                                </goals>-->
-    <!--                            </execution>-->
-    <!--                        </executions>-->
-    <!--                    </plugin>-->
-    <!--                </plugins>-->
-    <!--            </build>-->
-    <!--        </profile>-->
-    <!--    </profiles>-->
-    <!---->
 </project>
