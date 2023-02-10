@@ -1,8 +1,9 @@
 package com.myadream.app.qiYang.services.authorize.impl.drive;
 
-import com.myadream.app.qiyang.single.entity.pojo.authorize.LoginPojo;
-import com.myadream.app.qiyang.single.entity.pojo.authorize.RegisterPojo;
-import com.myadream.app.qiyang.single.services.impl.authorize.AuthorizeOperationService;
+
+import com.myadream.app.qiYang.entity.pojo.authorize.LoginPojo;
+import com.myadream.app.qiYang.entity.pojo.authorize.RegisterPojo;
+import com.myadream.app.qiYang.services.authorize.impl.AuthorizeOperationService;
 
 public class EmailAuthorizeImpl implements AuthorizeOperationService {
     @Override

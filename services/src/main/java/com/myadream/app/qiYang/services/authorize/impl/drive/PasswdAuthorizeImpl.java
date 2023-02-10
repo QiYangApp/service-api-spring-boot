@@ -1,18 +1,18 @@
 package com.myadream.app.qiYang.services.authorize.impl.drive;
 
 import cn.hutool.crypto.digest.MD5;
-import com.myadream.app.qiyang.single.entity.dto.QyMemberEntity;
-import com.myadream.app.qiyang.single.entity.dto.QyMemberPasswordEntity;
-import com.myadream.app.qiyang.single.entity.pojo.authorize.LoginPojo;
-import com.myadream.app.qiyang.single.entity.pojo.authorize.PasswdLoginPojo;
-import com.myadream.app.qiyang.single.entity.pojo.authorize.RegisterPojo;
-import com.myadream.app.qiyang.single.enums.os.I18nEnum;
-import com.myadream.app.qiyang.single.exception.BizException;
-import com.myadream.app.qiyang.single.repositorys.MemberPasswdRepository;
-import com.myadream.app.qiyang.single.repositorys.MemberRepository;
-import com.myadream.app.qiyang.single.services.AuthorizeService;
-import com.myadream.app.qiyang.single.services.impl.authorize.AuthorizeOperationService;
-import com.myadream.app.qiyang.single.utils.I18nMessageUtil;
+import com.myadream.app.qiYang.entity.dto.QyMemberEntity;
+import com.myadream.app.qiYang.entity.dto.QyMemberPasswordEntity;
+import com.myadream.app.qiYang.entity.pojo.authorize.LoginPojo;
+import com.myadream.app.qiYang.entity.pojo.authorize.PasswdLoginPojo;
+import com.myadream.app.qiYang.entity.pojo.authorize.RegisterPojo;
+import com.myadream.app.qiYang.enums.os.I18nEnum;
+import com.myadream.app.qiYang.exception.BizException;
+import com.myadream.app.qiYang.repository.MemberPasswdRepository;
+import com.myadream.app.qiYang.repository.MemberRepository;
+import com.myadream.app.qiYang.services.authorize.AuthorizeService;
+import com.myadream.app.qiYang.services.authorize.impl.AuthorizeOperationService;
+import com.myadream.app.qiYang.utils.I18nMessageUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.UUID;

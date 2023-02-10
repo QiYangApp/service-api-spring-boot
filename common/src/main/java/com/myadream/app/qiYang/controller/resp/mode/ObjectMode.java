@@ -3,6 +3,7 @@ package com.myadream.app.qiYang.controller.resp.mode;
 import com.myadream.app.qiYang.controller.resp.RespEntity;
 import com.myadream.app.qiYang.enums.os.I18nEnum;
 import com.myadream.app.qiYang.enums.os.StatusEnum;
+import com.myadream.app.qiYang.utils.I18nMessageUtil;
 import org.springframework.http.HttpStatus;
 import lombok.Getter;
 
@@ -76,8 +77,7 @@ public class ObjectMode<T> implements RespMode {
         this.data = data;
         this.status = status;
         this.code = code;
-        // todo  111
-        this.message = "";// I18nMessageUtil.getMessage(message.getKey());
+        this.message = I18nMessageUtil.getMessage(message.getKey());
 
         return new RespEntity(this);
     }

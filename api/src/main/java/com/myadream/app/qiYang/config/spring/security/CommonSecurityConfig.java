@@ -2,8 +2,7 @@ package com.myadream.app.qiYang.config.spring.security;
 
 
 import com.myadream.app.qiYang.config.property.IgnoreUrlsConfig;
-import com.myadream.app.qiYang.services.security.config.RestAuthenticationEntryPoint;
-import com.myadream.app.qiYang.services.security.config.RestfulAccessDeniedHandler;
+import com.myadream.app.qiYang.services.security.config.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -43,8 +42,8 @@ public class CommonSecurityConfig {
     }
 
     @Bean
-    public JwtAuthenticationTokenFilter jwtAuthenticationTokenFilter(){
-        return new JwtAuthenticationTokenFilter();
+    public AuthenticationTokenFilter jwtAuthenticationTokenFilter() {
+        return new AuthenticationTokenFilter();
     }
 
     @Bean
@@ -58,7 +57,7 @@ public class CommonSecurityConfig {
     }
 
     @Bean
-    public DynamicSecurityFilter dynamicSecurityFilter(){
+    public DynamicSecurityFilter dynamicSecurityFilter() {
         return new DynamicSecurityFilter();
     }
 }

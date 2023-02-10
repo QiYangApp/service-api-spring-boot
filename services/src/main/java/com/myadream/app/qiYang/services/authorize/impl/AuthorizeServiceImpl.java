@@ -5,7 +5,10 @@ import com.myadream.app.qiYang.entity.po.authorize.AuthorizedPo;
 import com.myadream.app.qiYang.enums.business.MemberStateEnum;
 import com.myadream.app.qiYang.repository.MemberRoleRepository;
 import com.myadream.app.qiYang.repository.RouterRepository;
+import com.myadream.app.qiYang.repository.cache.RedisUtil;
 import com.myadream.app.qiYang.services.authorize.AuthorizeService;
+import com.myadream.app.qiYang.services.token.TokenFacade;
+import com.myadream.app.qiYang.services.token.impl.dataSet.JwtTokenDataSet;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -23,7 +26,7 @@ import java.util.Objects;
 @Service
 @Slf4j
 public class AuthorizeServiceImpl implements AuthorizeService {
-    private final JwtService jwtService;
+    private final TokenFacade tokenFacade;
 
     private final RouterRepository routerRepository;
 
@@ -37,13 +40,13 @@ public class AuthorizeServiceImpl implements AuthorizeService {
     private String tokenHeader;
 
     public AuthorizeServiceImpl(
-            JwtService jwtService,
+            TokenFacade tokenFacade,
             RouterRepository routerRepository,
             MemberRoleRepository memberRoleRepository,
             RedisUtil redisUtil,
             HttpServletRequest request
     ) {
-        this.jwtService = jwtService;
+        this.tokenFacade = tokenFacade;
         this.routerRepository = routerRepository;
         this.memberRoleRepository = memberRoleRepository;
         this.redisUtil = redisUtil;
@@ -112,13 +115,13 @@ public class AuthorizeServiceImpl implements AuthorizeService {
         HashMap<String, Object> data = new HashMap<>(1);
         data.put(authorizedPo.getClass().toString(), authorizedPo);
 
-        String token = jwtService.generate(new JwtDataSetImpl(data));
+        String token = tokenFacade.generate(new JwtTokenDataSet(data));
 
         //回写token 记录
-        authorizedPo.setToken(token);
-        data.remove(authorizedPo.getClass().toString());
-        data.put(authorizedPo.getClass().toString(), authorizedPo);
-        jwtService.update(token, new JwtDataSetImpl(data));
+//        authorizedPo.setToken(token);
+//        data.remove(authorizedPo.getClass().toString());
+//        data.put(authorizedPo.getClass().toString(), authorizedPo);
+//        tokenFacade.(token, new JwtTokenDataSet(data));
 
         return authorizedPo;
     }
@@ -126,17 +129,22 @@ public class AuthorizeServiceImpl implements AuthorizeService {
     @Override
     public boolean remove(AuthorizedPo authorizedPo) {
         redisUtil.del(generateMemberWithCacheKey(authorizedPo.getQyMemberEntity()));
-        return jwtService.remove(authorizedPo.getToken());
+//        return jwtService.remove(authorizedPo.getToken());
+        return true;
     }
 
     @Override
     public boolean isExist(AuthorizedPo authorizedPo) {
-        return jwtService.exist(authorizedPo.getToken());
+//        return jwtService.exist(authorizedPo.getToken());
+        return true;
     }
 
     @Override
     public boolean isExist(String token) {
-        return jwtService.exist(token);
+
+//        return jwtService.exist(token);
+        return true;
+
     }
 
     @Override
@@ -151,6 +159,7 @@ public class AuthorizeServiceImpl implements AuthorizeService {
 
     @Override
     public AuthorizedPo getAuthorizeInfo(String token) {
-        return (AuthorizedPo) jwtService.get(token);
+//        return (AuthorizedPo) jwtService.get(token);
+        return new AuthorizedPo();
     }
 }

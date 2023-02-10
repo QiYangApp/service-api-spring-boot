@@ -1,10 +1,12 @@
 package com.myadream.app.qiYang.services.security.config
 
 import com.myadream.app.qiYang.entity.dto.QyRouterEntity
+import com.myadream.app.qiYang.services.security.DynamicSecurityService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.security.access.ConfigAttribute
 import org.springframework.security.access.SecurityConfig
 import org.springframework.security.web.access.intercept.FilterInvocationSecurityMetadataSource
+import org.springframework.stereotype.Component
 
 /**
  * 动态权限数据源，用于获取动态权限规则
@@ -16,11 +18,11 @@ class DynamicSecurityMetadataSource : FilterInvocationSecurityMetadataSource {
 
     @Throws(IllegalArgumentException::class)
     override fun getAttributes(o: Any): Collection<ConfigAttribute> {
-        return format(dynamicSecurityService.getCurrentAuthorizeRoute())
+        return format(ArrayList())
     }
 
     override fun getAllConfigAttributes(): Collection<ConfigAttribute> {
-        return format(dynamicSecurityService.getAllRoute())
+        return format(ArrayList())
     }
 
     override fun supports(aClass: Class<*>?): Boolean {

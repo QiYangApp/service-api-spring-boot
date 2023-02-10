@@ -8,6 +8,7 @@ import org.springframework.http.HttpMethod
 import org.springframework.security.access.SecurityMetadataSource
 import org.springframework.security.access.intercept.AbstractSecurityInterceptor
 import org.springframework.security.web.FilterInvocation
+import org.springframework.stereotype.Component
 import org.springframework.util.AntPathMatcher
 import org.springframework.util.PathMatcher
 import java.io.IOException
@@ -22,9 +23,8 @@ class DynamicSecurityFilter : AbstractSecurityInterceptor(), Filter {
     private val dynamicSecurityMetadataSource: DynamicSecurityMetadataSource? = null
 
     @Autowired
-    private val ignoreUrlsConfig: IgnoreUrlsConfig? = null
+    private val ignoreUrlsConfig: IgnoreUrlsConfig = IgnoreUrlsConfig();
 
-    @Autowired
     fun setMyAccessDecisionManager(dynamicAccessDecisionManager: DynamicAccessDecisionManager?) {
         super.setAccessDecisionManager(dynamicAccessDecisionManager)
     }
@@ -59,12 +59,12 @@ class DynamicSecurityFilter : AbstractSecurityInterceptor(), Filter {
         }
     }
 
-    fun destroy() {}
+    override fun destroy() {}
     override fun getSecureObjectClass(): Class<*> {
         return FilterInvocation::class.java
     }
 
-    override fun obtainSecurityMetadataSource(): SecurityMetadataSource {
+    override fun obtainSecurityMetadataSource(): DynamicSecurityMetadataSource? {
         return dynamicSecurityMetadataSource
     }
 }

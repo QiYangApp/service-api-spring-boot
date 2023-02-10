@@ -1,5 +1,7 @@
 package com.myadream.app.qiYang.services.authorize.impl;
 
+import com.myadream.app.qiYang.entity.po.authorize.AuthorizedPo;
+import com.myadream.app.qiYang.services.authorize.AuthorizeService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.AuthorityUtils;
@@ -9,6 +11,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.stream.Collectors;
 
 @Component
@@ -27,7 +30,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
             return null;
         }
 
-        String roles = authorized.getRoles().stream().map(QyRoleEntity::getRoleName).collect(Collectors.joining(","));
-        return new User(username, null, AuthorityUtils.commaSeparatedStringToAuthorityList(roles));
+//        String roles = authorized.getRoles().stream().map(QyRoleEntity::getRoleName).collect(Collectors.joining(","));
+        return new User(username, null, AuthorityUtils.commaSeparatedStringToAuthorityList(""));
     }
 }

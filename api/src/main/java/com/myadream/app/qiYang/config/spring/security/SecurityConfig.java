@@ -1,11 +1,12 @@
 package com.myadream.app.qiYang.config.spring.security;
 
-import com.myadream.app.qiyang.single.config.property.IgnoreUrlsConfig;
-import com.myadream.app.qiyang.single.services.DynamicSecurityService;
-import com.myadream.app.qiyang.single.services.impl.security.DynamicSecurityFilter;
-import com.myadream.app.qiyang.single.services.impl.security.JwtAuthenticationTokenFilter;
-import com.myadream.app.qiyang.single.services.impl.security.RestAuthenticationEntryPoint;
-import com.myadream.app.qiyang.single.services.impl.security.RestfulAccessDeniedHandler;
+import com.myadream.app.qiYang.config.property.IgnoreUrlsConfig;
+import com.myadream.app.qiYang.services.security.DynamicSecurityService;
+import com.myadream.app.qiYang.services.security.config.AuthenticationTokenFilter;
+import com.myadream.app.qiYang.services.security.config.DynamicSecurityFilter;
+import com.myadream.app.qiYang.services.security.config.RestAuthenticationEntryPoint;
+import com.myadream.app.qiYang.services.security.config.RestfulAccessDeniedHandler;
+import jakarta.servlet.Filter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -26,7 +27,7 @@ public class SecurityConfig  {
     @Autowired
     private RestAuthenticationEntryPoint restAuthenticationEntryPoint;
     @Autowired
-    private JwtAuthenticationTokenFilter jwtAuthenticationTokenFilter;
+    private AuthenticationTokenFilter authenticationTokenFilter;
     @Autowired
     private DynamicSecurityService dynamicSecurityService;
     @Autowired
@@ -38,10 +39,10 @@ public class SecurityConfig  {
                 .authorizeRequests();
         //不需要保护的资源路径允许访问
         for (String url : ignoreUrlsConfig.getUrls()) {
-            registry.antMatchers(url).permitAll();
+            registry.requestMatchers(url).permitAll();
         }
         //允许跨域请求的OPTIONS请求
-        registry.antMatchers(HttpMethod.OPTIONS)
+        registry.dispatcherTypeMatchers(HttpMethod.OPTIONS)
                 .permitAll();
         httpSecurity.csrf()// 由于使用的是JWT，我们这里不需要csrf
                 .disable()
@@ -54,7 +55,7 @@ public class SecurityConfig  {
         // 禁用缓存
         httpSecurity.headers().cacheControl();
         // 添加JWT filter
-        httpSecurity.addFilterBefore(jwtAuthenticationTokenFilter, UsernamePasswordAuthenticationFilter.class);
+        httpSecurity.addFilterBefore(authenticationTokenFilter, UsernamePasswordAuthenticationFilter.class);
         //添加自定义未授权和未登录结果返回
         httpSecurity.exceptionHandling()
                 .accessDeniedHandler(restfulAccessDeniedHandler)
